@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log powerDetect.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source powerDetect.tcl
+EAStep vivado -log manage.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source manage.tcl

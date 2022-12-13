@@ -1,72 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1670860242">
-  <File Type="PWROPT-DCP" Name="powerDetect_pwropt.dcp"/>
-  <File Type="ROUTE-PWR" Name="powerDetect_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="powerDetect.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="powerDetect_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="powerDetect_reports.tcl"/>
-  <File Type="BG-DRC" Name="powerDetect.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="powerDetect_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="powerDetect_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="powerDetect.hwdef"/>
-  <File Type="OPT-DCP" Name="powerDetect_opt.dcp"/>
-  <File Type="OPT-DRC" Name="powerDetect_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="powerDetect_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="powerDetect_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="powerDetect_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="powerDetect_placed.dcp"/>
-  <File Type="PLACE-IO" Name="powerDetect_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="powerDetect_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="powerDetect_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="powerDetect_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="powerDetect_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="powerDetect_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="powerDetect_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="powerDetect_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="powerDetect_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="powerDetect_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="powerDetect_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="powerDetect_drc_physopted.rpt"/>
-  <File Type="BG-BIT" Name="powerDetect.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="powerDetect_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="powerDetect_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="powerDetect_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="powerDetect_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="powerDetect_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="powerDetect_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="powerDetect.msk"/>
-  <File Type="ROUTE-DRC-RPX" Name="powerDetect_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="powerDetect.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="powerDetect_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="powerDetect.rbt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="powerDetect_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="powerDetect.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="powerDetect_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="powerDetect_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="powerDetect_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="powerDetect_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="powerDetect_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="powerDetect_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="powerDetect_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="powerDetect_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="powerDetect.vdi"/>
-  <File Type="ROUTE-CLK" Name="powerDetect_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="powerDetect_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="powerDetect_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="powerDetect_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="powerDetect_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="powerDetect_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="powerDetect.nky"/>
-  <File Type="BITSTR-BMM" Name="powerDetect_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="powerDetect.mmi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1670967223">
+  <File Type="PWROPT-DCP" Name="manage_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="manage_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="manage.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="manage_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="manage_reports.tcl"/>
+  <File Type="BG-DRC" Name="manage.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="manage_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="manage_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="manage.hwdef"/>
+  <File Type="OPT-DCP" Name="manage_opt.dcp"/>
+  <File Type="OPT-DRC" Name="manage_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="manage_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="manage_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="manage_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="manage_placed.dcp"/>
+  <File Type="PLACE-IO" Name="manage_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="manage_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="manage_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="manage_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="manage_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="manage_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="manage_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="manage_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="manage_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="manage_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="manage_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="manage_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="manage.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="manage_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="manage_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="manage_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="manage_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="manage_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="manage_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="manage.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="manage_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="manage.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="manage_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="manage.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="manage_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="manage.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="manage_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="manage_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="manage_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="manage_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="manage_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="manage_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="manage_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="manage_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="manage.vdi"/>
+  <File Type="ROUTE-CLK" Name="manage_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="manage_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="manage_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="manage_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="manage_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="manage_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="manage.nky"/>
+  <File Type="BITSTR-BMM" Name="manage_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="manage.mmi"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="powerDetect.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="powerDetect.sysdef"/>
+  <File Type="BITSTR-LTX" Name="manage.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="manage.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/brakeDetect.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clutchDetect.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reverseDetect.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/throttleDetect.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/manage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/powerDetect.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -74,7 +110,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="powerDetect"/>
+      <Option Name="TopModule" Val="manage"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

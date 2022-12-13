@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module powerDetect(sys_clk, stop_engine, start_engine, led7);
+module powerDetect(sys_clk, stop_engine, start_engine, engine_power_signal);
 input sys_clk;
 input stop_engine;
 input start_engine;
-output reg led7;
+output reg engine_power_signal;
 reg [31: 0] cnt = 32'b0;
 reg time_up;
 parameter period = 32'd100000000;
@@ -32,9 +32,9 @@ parameter period = 32'd100000000;
 always @(posedge sys_clk)
 begin
     if (time_up) begin
-        led7 <= 1'b1;
+        engine_power_signal <= 1'b1;
     end else begin
-        led7 <= 1'b0;
+        engine_power_signal <= 1'b0;
     end
 end
 
@@ -48,6 +48,8 @@ begin
         time_up = 1'b1;
     end else if (start_engine) begin
         cnt <= cnt + 1;
+    end else begin
+        cnt <= 32'd0;
     end
 end
 endmodule
