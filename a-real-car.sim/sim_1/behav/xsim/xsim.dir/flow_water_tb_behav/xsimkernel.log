@@ -1,0 +1,7 @@
+Running: xsim.dir/flow_water_tb_behav/xsimk.exe -simmode gui -wdb flow_water_tb_behav.wdb -simrunnum 0 -socket 3480
+Design successfully loaded
+Design Loading Memory Usage: 7220 KB (Peak: 7220 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7852 KB (Peak: 7852 KB)
+Simulation CPU Usage: 31 ms
