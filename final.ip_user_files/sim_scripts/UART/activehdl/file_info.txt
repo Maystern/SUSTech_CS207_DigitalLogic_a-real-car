@@ -1,0 +1,6 @@
+axi_lite_ipif_v3_0_vh_rfs.vhd,vhdl,axi_lite_ipif_v3_0_4,../../../ipstatic/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd,
+lib_pkg_v1_0_rfs.vhd,vhdl,lib_pkg_v1_0_2,../../../ipstatic/hdl/lib_pkg_v1_0_rfs.vhd,
+lib_srl_fifo_v1_0_rfs.vhd,vhdl,lib_srl_fifo_v1_0_2,../../../ipstatic/hdl/lib_srl_fifo_v1_0_rfs.vhd,
+lib_cdc_v1_0_rfs.vhd,vhdl,lib_cdc_v1_0_2,../../../ipstatic/hdl/lib_cdc_v1_0_rfs.vhd,
+axi_uartlite_v2_0_vh_rfs.vhd,vhdl,axi_uartlite_v2_0_19,../../../ipstatic/hdl/axi_uartlite_v2_0_vh_rfs.vhd,
+UART.vhd,vhdl,xil_defaultlib,../../../../../../Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/ip/UART/sim/UART.vhd,
