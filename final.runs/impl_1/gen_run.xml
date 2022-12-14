@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1671005927">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1671007519">
   <File Type="PWROPT-DCP" Name="SimulatedDevice_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="SimulatedDevice_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SimulatedDevice.tcl"/>
@@ -127,9 +127,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
