@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Dec 14 15:29:31 2022
+| Date         : Wed Dec 14 16:19:14 2022
 | Host         : MaysternLaptop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file SimulatedDevice_control_sets_placed.rpt
 | Design       : SimulatedDevice
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    19 |
-| Unused register locations in slices containing registers |    72 |
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    78 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              35 |           16 |
+| No           | No                    | No                     |              35 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             162 |           52 |
-| Yes          | No                    | No                     |              17 |            9 |
+| No           | Yes                   | No                     |             196 |           51 |
+| Yes          | No                    | No                     |              17 |            7 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              18 |            6 |
+| Yes          | Yes                   | No                     |              18 |            7 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,25 +48,27 @@ Table of Contents
 +-----------------------+-------------------------------------------+------------------------------------------------+------------------+----------------+
 |      Clock Signal     |               Enable Signal               |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
 +-----------------------+-------------------------------------------+------------------------------------------------+------------------+----------------+
-|  md/my_divclk/clk_16x | md/rx/rxd1_i_1_n_0                        |                                                |                1 |              1 |
 |  md/my_divclk/clk_ms  |                                           |                                                |                1 |              1 |
+|  md/my_divclk/clk_16x | md/rx/rxd1_i_1_n_0                        |                                                |                1 |              1 |
 |  sys_clk_IBUF_BUFG    |                                           | manual_device/FSM_onehot_state_reg_n_0_[0]     |                1 |              1 |
 |  sys_clk_IBUF_BUFG    | manual_device/manual_not_starting_i_1_n_0 | manual_device/FSM_onehot_state_reg_n_0_[0]     |                1 |              1 |
 |  sys_clk_IBUF_BUFG    | manual_device/manual_starting_i_2_n_0     | manual_device/manual_starting_i_1_n_0          |                1 |              1 |
 |  sys_clk_IBUF_BUFG    | manual_device/reverse_shutdown            |                                                |                1 |              1 |
+|  sys_clk_IBUF_BUFG    |                                           | manual_device/FSM_onehot_state_reg_n_0_[2]     |                1 |              2 |
 |  md/my_divclk/clk_x   |                                           |                                                |                1 |              3 |
-|  md/my_divclk/clk_16x | md/rx/data_out1[3]_i_1_n_0                |                                                |                3 |              4 |
+|  md/my_divclk/clk_16x | md/rx/data_out1[3]_i_1_n_0                |                                                |                1 |              4 |
 |  md/my_divclk/clk_x   | md/tx/present_state                       |                                                |                3 |              5 |
-|  sys_clk_IBUF_BUFG    |                                           | manual_device/FSM_onehot_next_state[4]_i_1_n_0 |                3 |              5 |
+|  sys_clk_IBUF_BUFG    |                                           | manual_device/FSM_onehot_next_state[4]_i_1_n_0 |                2 |              5 |
 |  md/my_divclk/clk_x   | md/tx/data_in_buf                         |                                                |                1 |              6 |
 |  md/my_divclk/clk_16x |                                           |                                                |                4 |              9 |
-|  md/my_divclk/clk_16x | md/rx/clk_16x_cnt[15]_i_2_n_0             | md/rx/clk_16x_cnt[15]_i_1_n_0                  |                4 |             16 |
-|  sys_clk_IBUF_BUFG    |                                           |                                                |               10 |             22 |
+|  md/my_divclk/clk_16x | md/rx/clk_16x_cnt[15]_i_2_n_0             | md/rx/clk_16x_cnt[15]_i_1_n_0                  |                5 |             16 |
+|  sys_clk_IBUF_BUFG    |                                           |                                                |               11 |             22 |
 |  sys_clk_IBUF_BUFG    |                                           | manual_device/reverse_shutdown                 |                8 |             31 |
-|  sys_clk_IBUF_BUFG    |                                           | md/my_divclk/clk_16x_5                         |                8 |             31 |
-|  sys_clk_IBUF_BUFG    |                                           | md/my_divclk/clk_ms_3                          |                8 |             31 |
 |  sys_clk_IBUF_BUFG    |                                           | md/my_divclk/clk_x_1                           |                8 |             31 |
-|  sys_clk_IBUF_BUFG    |                                           | stop_engine_signal_IBUF                        |               16 |             32 |
+|  sys_clk_IBUF_BUFG    |                                           | md/my_divclk/clk_ms_3                          |                8 |             31 |
+|  sys_clk_IBUF_BUFG    |                                           | md/my_divclk/clk_16x_5                         |                8 |             31 |
+|  sys_clk_IBUF_BUFG    |                                           | manual_device/www                              |                8 |             32 |
+|  sys_clk_IBUF_BUFG    |                                           | stop_engine_signal_IBUF                        |                7 |             32 |
 +-----------------------+-------------------------------------------+------------------------------------------------+------------------+----------------+
 
 
@@ -74,12 +76,13 @@ Table of Contents
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 1      |                     6 |
+| 2      |                     1 |
 | 3      |                     1 |
 | 4      |                     1 |
 | 5      |                     2 |
 | 6      |                     1 |
 | 9      |                     1 |
-| 16+    |                     7 |
+| 16+    |                     8 |
 +--------+-----------------------+
 
 

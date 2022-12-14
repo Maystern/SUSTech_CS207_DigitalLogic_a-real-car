@@ -28,10 +28,14 @@ module manual_top(
     input clutch,
     input brake,
     input throttle,
+    input turn_left_signal,
+    input turn_right_signal,
     output reg engine_power_signal,
     output reg manual_not_starting,
     output reg manual_starting,
-    output reg manual_moving
+    output reg manual_moving,
+    output reg turn_left,
+    output reg turn_right
 );
 parameter poweron = 3'b000, poweroff = 3'b001;
 parameter not_starting = 3'b010, starting = 3'b011, moving = 3'b100;
@@ -130,6 +134,36 @@ always @(posedge sys_clk) begin
         default next_state <= poweroff;
     endcase
         if (time_up == 1'b0) next_state <= poweroff;
+end
+reg [31: 0] www = 32'd0;
+always @(posedge sys_clk) begin
+    www = www + 1;
+    if (state == not_starting) begin
+        turn_left <= 1'b1;
+        turn_right <= 1'b1;
+        www <= 32'b0;
+    end else if (state == starting || state == moving) begin
+        if (www <= 32'd50000000) begin
+            if (turn_left_signal) begin
+                turn_left <= 1'b1;
+                turn_right <= 1'b0;
+            end else if (turn_right_signal) begin
+                 turn_left <= 1'b0;
+                 turn_right <= 1'b1;
+            end else begin
+                 turn_left <= 1'b0;
+                 turn_right <= 1'b0;
+            end;
+        end else begin
+            turn_left <= 1'b0;
+            turn_right <= 1'b0;
+        end
+    end else begin
+       turn_left <= 1'b0;
+       turn_right <= 1'b0;
+       www <= 32'b0;
+    end
+    if (www == 32'd100000000) www = 32'd0;
 end
 
 endmodule

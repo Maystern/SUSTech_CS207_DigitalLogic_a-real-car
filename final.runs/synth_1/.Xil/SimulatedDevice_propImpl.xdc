@@ -45,3 +45,7 @@ set_property src_info {type:XDC file:1 line:66 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN V1 [get_ports turn_left_signal]
 set_property src_info {type:XDC file:1 line:69 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R11 [get_ports turn_right_signal]
+set_property src_info {type:XDC file:1 line:72 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN G4 [get_ports turn_right]
+set_property src_info {type:XDC file:1 line:75 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F6 [get_ports turn_left]
