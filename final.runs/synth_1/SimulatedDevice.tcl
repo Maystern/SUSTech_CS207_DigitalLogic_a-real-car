@@ -29,7 +29,9 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Maystern/VivadoItems/final/final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/light_7seg_ego1.v
   C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/manual_top.v
+  C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/odometer.v
   C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v
   C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v
   C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v

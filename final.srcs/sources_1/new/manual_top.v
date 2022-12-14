@@ -35,7 +35,10 @@ module manual_top(
     output reg manual_starting,
     output reg manual_moving,
     output reg turn_left,
-    output reg turn_right
+    output reg turn_right,
+    output [7: 0] seg1,
+    output [7: 0] seg0,
+    output [7: 0] seg_en
 );
 parameter poweron = 3'b000, poweroff = 3'b001;
 parameter not_starting = 3'b010, starting = 3'b011, moving = 3'b100;
@@ -44,6 +47,8 @@ reg [31: 0] cnt = 32'b0;
 reg time_up = 1'b0;
 reg flag_stop_engine = 1'b0;
 parameter period = 32'd100000000;
+
+odometer om(sys_clk, state == poweroff, state == moving, seg1, seg0, seg_en);
 
 always @(posedge sys_clk) begin
      if (stop_engine) begin
@@ -116,7 +121,7 @@ always @(posedge sys_clk) begin
         end 
         not_starting: begin
             if(throttle && clutch && !brake) next_state <= starting;
-            else if(throttle && !clutch) next_state <= poweroff;
+            else if(throttle && !clutch && !brake) next_state <= poweroff;
             else next_state <= state;
         end
         starting: begin

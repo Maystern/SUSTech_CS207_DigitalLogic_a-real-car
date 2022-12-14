@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Dec 14 16:46:05 2022
+| Date             : Thu Dec 15 02:56:52 2022
 | Host             : MaysternLaptop running 64-bit major release  (build 9200)
 | Command          : report_power -file SimulatedDevice_power_routed.rpt -pb SimulatedDevice_power_summary_routed.pb -rpx SimulatedDevice_power_routed.rpx
 | Design           : SimulatedDevice
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.955        |
+| Total On-Chip Power (W)  | 3.791        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.879        |
-| Device Static (W)        | 0.076        |
+| Dynamic (W)              | 3.708        |
+| Device Static (W)        | 0.083        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 75.7         |
-| Junction Temperature (C) | 34.3         |
+| Max Ambient (C)          | 66.9         |
+| Junction Temperature (C) | 43.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.596 |      502 |       --- |             --- |
-|   LUT as Logic |     0.438 |      136 |     20800 |            0.65 |
-|   CARRY4       |     0.086 |       60 |      8150 |            0.74 |
-|   Register     |     0.066 |      266 |     41600 |            0.64 |
+| Slice Logic    |     0.798 |      794 |       --- |             --- |
+|   LUT as Logic |     0.597 |      263 |     20800 |            1.26 |
+|   CARRY4       |     0.113 |       76 |      8150 |            0.93 |
+|   Register     |     0.082 |      384 |     41600 |            0.92 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.678 |      484 |       --- |             --- |
-| I/O            |     0.605 |       23 |       210 |           10.95 |
-| Static Power   |     0.076 |          |           |                 |
-| Total          |     1.955 |          |           |                 |
+|   Others       |     0.000 |       14 |       --- |             --- |
+| Signals        |     0.876 |      708 |       --- |             --- |
+| I/O            |     2.034 |       47 |       210 |           22.38 |
+| Static Power   |     0.083 |          |           |                 |
+| Total          |     3.791 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.331 |       1.318 |      0.013 |
-| Vccaux    |       1.800 |     0.033 |       0.021 |      0.013 |
-| Vcco33    |       3.300 |     0.160 |       0.159 |      0.001 |
+| Vccint    |       1.000 |     1.736 |       1.718 |      0.019 |
+| Vccaux    |       1.800 |     0.086 |       0.073 |      0.013 |
+| Vcco33    |       3.300 |     0.564 |       0.563 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,12 +138,13 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| SimulatedDevice |     1.879 |
-|   manual_device |     0.510 |
-|   md            |     0.670 |
-|     my_divclk   |     0.526 |
-|     rx          |     0.028 |
-|     tx          |     0.093 |
+| SimulatedDevice |     3.708 |
+|   manual_device |     0.893 |
+|     om          |     0.390 |
+|   md            |     0.681 |
+|     my_divclk   |     0.508 |
+|     rx          |     0.042 |
+|     tx          |     0.110 |
 +-----------------+-----------+
 
 
