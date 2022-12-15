@@ -14,15 +14,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 48256 
+INFO: Helper process launched with PID 29512 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 330.184 ; gain = 100.035
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 330.328 ; gain = 100.398
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SimulatedDevice' [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/dev_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v:11]
-INFO: [Synth 8-638] synthesizing module 'divclk' [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v:71]
-INFO: [Synth 8-256] done synthesizing module 'divclk' (1#1) [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v:71]
-INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v:10]
+INFO: [Synth 8-638] synthesizing module 'SimulatedDevice' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/dev_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_top.v:11]
+INFO: [Synth 8-638] synthesizing module 'divclk' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_top.v:71]
+INFO: [Synth 8-256] done synthesizing module 'divclk' (1#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_tx.v:10]
 	Parameter idle bound to: 5'b00000 
 	Parameter start bound to: 5'b00001 
 	Parameter b0 bound to: 5'b00011 
@@ -35,36 +35,36 @@ INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Maystern/Desktop/CS2
 	Parameter b7 bound to: 5'b01101 
 	Parameter check bound to: 5'b01111 
 	Parameter stop bound to: 5'b01110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v:51]
-WARNING: [Synth 8-6014] Unused sequential element clk_x_cnt_reg was removed.  [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v:47]
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (2#1) [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v:10]
-INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_tx.v:51]
+WARNING: [Synth 8-6014] Unused sequential element clk_x_cnt_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_tx.v:47]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (2#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_tx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:12]
 	Parameter width bound to: 8 - type: integer 
 	Parameter idle bound to: 1 - type: integer 
 	Parameter one bound to: 2 - type: integer 
 	Parameter two bound to: 3 - type: integer 
 	Parameter stop bound to: 4 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:68]
-WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:22]
-INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:12]
-INFO: [Synth 8-256] done synthesizing module 'uart_top' (4#1) [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v:11]
-INFO: [Synth 8-638] synthesizing module 'manual_top' [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/manual_top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:68]
+WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:22]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:12]
+INFO: [Synth 8-256] done synthesizing module 'uart_top' (4#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_top.v:11]
+INFO: [Synth 8-638] synthesizing module 'manual_top' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/manual_top.v:23]
 	Parameter poweron bound to: 3'b000 
 	Parameter poweroff bound to: 3'b001 
 	Parameter not_starting bound to: 3'b010 
 	Parameter starting bound to: 3'b011 
 	Parameter moving bound to: 3'b100 
 	Parameter period bound to: 100000000 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'odometer' [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/odometer.v:23]
-INFO: [Synth 8-638] synthesizing module 'light_7seg_ego1' [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/light_7seg_ego1.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/light_7seg_ego1.v:28]
-INFO: [Synth 8-256] done synthesizing module 'light_7seg_ego1' (5#1) [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/light_7seg_ego1.v:23]
-INFO: [Synth 8-256] done synthesizing module 'odometer' (6#1) [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/odometer.v:23]
-INFO: [Synth 8-256] done synthesizing module 'manual_top' (7#1) [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/manual_top.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SimulatedDevice' (8#1) [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/dev_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'odometer' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/odometer.v:23]
+INFO: [Synth 8-638] synthesizing module 'light_7seg_ego1' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/light_7seg_ego1.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/light_7seg_ego1.v:28]
+INFO: [Synth 8-256] done synthesizing module 'light_7seg_ego1' (5#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/light_7seg_ego1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'odometer' (6#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/odometer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'manual_top' (7#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/manual_top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SimulatedDevice' (8#1) [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/dev_top.v:23]
 WARNING: [Synth 8-3331] design uart_top has unconnected port data_in[7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 382.469 ; gain = 152.320
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 382.668 ; gain = 152.738
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -74,44 +74,44 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 382.469 ; gain = 152.320
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 382.668 ; gain = 152.738
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc]
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc:2]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc:2]
+Parsing XDC File [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc:2]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc:8]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SimulatedDevice_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Maystern/Desktop/final/final.srcs/constrs_1/imports/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SimulatedDevice_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SimulatedDevice_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 715.348 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 716.223 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 715.348 ; gain = 485.199
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 716.223 ; gain = 486.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 715.348 ; gain = 485.199
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 716.223 ; gain = 486.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 715.348 ; gain = 485.199
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 716.223 ; gain = 486.293
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -142,7 +142,7 @@ INFO: [Synth 8-5545] ROM "next_cnt" won't be mapped to RAM because address size 
 INFO: [Synth 8-5544] ROM "next_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "ttt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'manual_top'
-WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/manual_top.v:119]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/manual_top.v:112]
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -155,7 +155,7 @@ INFO: [Synth 8-5544] ROM "manual_not_starting" won't be mapped to Block RAM beca
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element www_reg was removed.  [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/manual_top.v:152]
+WARNING: [Synth 8-6014] Unused sequential element www_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/manual_top.v:145]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -173,7 +173,7 @@ WARNING: [Synth 8-6014] Unused sequential element www_reg was removed.  [C:/User
                     stop |                             1011 |                            01110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'uart_tx'
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:47]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -185,7 +185,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/M
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'manual_top'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 715.348 ; gain = 485.199
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 716.223 ; gain = 486.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,6 +204,7 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
 	   8 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               32 Bit    Registers := 9     
 	               16 Bit    Registers := 1     
@@ -211,7 +212,7 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 24    
+	                1 Bit    Registers := 28    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 29    
 	   2 Input     16 Bit        Muxes := 2     
@@ -226,7 +227,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 35    
 	  12 Input      1 Bit        Muxes := 4     
 	   5 Input      1 Bit        Muxes := 10    
 	   8 Input      1 Bit        Muxes := 1     
@@ -240,8 +241,11 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module SimulatedDevice 
 Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 Module divclk 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -318,7 +322,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 3     
 	  15 Input      5 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 18    
 	   3 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -336,13 +340,13 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element md/my_divclk/cntclk_cnt_reg was removed.  [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v:94]
-WARNING: [Synth 8-6014] Unused sequential element md/my_divclk/btnclk_reg was removed.  [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v:96]
-WARNING: [Synth 8-6014] Unused sequential element md/tx/trans_done_reg was removed.  [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v:104]
-WARNING: [Synth 8-6014] Unused sequential element md/rx/data_ready_reg was removed.  [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:63]
-WARNING: [Synth 8-6014] Unused sequential element md/rx/data_error_reg was removed.  [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:91]
-WARNING: [Synth 8-3936] Found unconnected internal register 'md/rx/data_out1_reg' and it is trimmed from '8' to '4' bits. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'in_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Maystern/Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/dev_top.v:63]
+WARNING: [Synth 8-6014] Unused sequential element md/my_divclk/cntclk_cnt_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_top.v:94]
+WARNING: [Synth 8-6014] Unused sequential element md/my_divclk/btnclk_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_top.v:96]
+WARNING: [Synth 8-6014] Unused sequential element md/tx/trans_done_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_tx.v:104]
+WARNING: [Synth 8-6014] Unused sequential element md/rx/data_ready_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:63]
+WARNING: [Synth 8-6014] Unused sequential element md/rx/data_error_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:91]
+WARNING: [Synth 8-3936] Found unconnected internal register 'md/rx/data_out1_reg' and it is trimmed from '8' to '4' bits. [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/uart_rx.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/imports/new/dev_top.v:74]
 INFO: [Synth 8-5545] ROM "md/my_divclk/cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "md/my_divclk/clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "md/my_divclk/cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -359,18 +363,18 @@ INFO: [Synth 8-5545] ROM "manual_device/time_up" won't be mapped to RAM because 
 INFO: [Synth 8-5545] ROM "manual_device/time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "manual_device/res" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "manual_device/reverse_shutdown" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element manual_device/om/cntt_reg was removed.  [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/odometer.v:45]
-WARNING: [Synth 8-6014] Unused sequential element manual_device/www_reg was removed.  [C:/Users/Maystern/VivadoItems/final/final.srcs/sources_1/new/manual_top.v:152]
+WARNING: [Synth 8-6014] Unused sequential element manual_device/om/cntt_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/odometer.v:45]
+WARNING: [Synth 8-6014] Unused sequential element manual_device/www_reg was removed.  [C:/Users/Maystern/Desktop/final/final.srcs/sources_1/new/manual_top.v:145]
 INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[7]' (LD) to 'md/rx/next_state_reg[6]'
 INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[6]' (LD) to 'md/rx/next_state_reg[5]'
 INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[5]' (LD) to 'md/rx/next_state_reg[4]'
 INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[3]' (LD) to 'md/rx/next_state_reg[4]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\md/rx/next_state_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\in_reg[6] )
 INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[7]' (FDR) to 'md/rx/present_state_reg[6]'
 INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[6]' (FDR) to 'md/rx/present_state_reg[5]'
 INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[5]' (FDR) to 'md/rx/present_state_reg[4]'
 INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[3]' (FDR) to 'md/rx/present_state_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\in_reg[6] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\md/tx/data_in_buf_reg[7] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\md/tx/data_in_buf_reg[6] )
 WARNING: [Synth 8-3332] Sequential element (md/rx/next_state_reg[4]) is unused and will be removed from module SimulatedDevice.
@@ -386,7 +390,7 @@ WARNING: [Synth 8-3332] Sequential element (md/rx/next_state_reg[2]) is unused a
 WARNING: [Synth 8-3332] Sequential element (md/rx/next_state_reg[1]) is unused and will be removed from module SimulatedDevice.
 WARNING: [Synth 8-3332] Sequential element (md/rx/next_state_reg[0]) is unused and will be removed from module SimulatedDevice.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 715.348 ; gain = 485.199
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 716.223 ; gain = 486.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -398,13 +402,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 716.352 ; gain = 486.203
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 717.004 ; gain = 487.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 716.945 ; gain = 486.797
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 717.672 ; gain = 487.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,7 +420,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -440,7 +444,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -453,7 +457,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -465,25 +469,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -501,13 +505,13 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    76|
-|3     |LUT1   |     7|
-|4     |LUT2   |    36|
-|5     |LUT3   |    37|
-|6     |LUT4   |    89|
-|7     |LUT5   |    60|
-|8     |LUT6   |    90|
-|9     |FDRE   |   381|
+|3     |LUT1   |     8|
+|4     |LUT2   |    23|
+|5     |LUT3   |    30|
+|6     |LUT4   |   104|
+|7     |LUT5   |    62|
+|8     |LUT6   |    92|
+|9     |FDRE   |   385|
 |10    |FDSE   |     3|
 |11    |IBUF   |    12|
 |12    |OBUF   |    35|
@@ -517,20 +521,20 @@ Report Instance Areas:
 +------+----------------+-----------+------+
 |      |Instance        |Module     |Cells |
 +------+----------------+-----------+------+
-|1     |top             |           |   827|
+|1     |top             |           |   831|
 |2     |  manual_device |manual_top |   531|
-|3     |    om          |odometer   |   289|
+|3     |    om          |odometer   |   288|
 |4     |  md            |uart_top   |   242|
 |5     |    my_divclk   |divclk     |   156|
 |6     |    rx          |uart_rx    |    59|
 |7     |    tx          |uart_tx    |    25|
 +------+----------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 742.500 ; gain = 179.473
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 742.500 ; gain = 512.352
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 743.098 ; gain = 179.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 743.098 ; gain = 513.168
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -542,8 +546,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 102 Infos, 29 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 742.500 ; gain = 516.789
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Maystern/VivadoItems/final/final.runs/synth_1/SimulatedDevice.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 743.098 ; gain = 517.184
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Maystern/Desktop/final/final.runs/synth_1/SimulatedDevice.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SimulatedDevice_utilization_synth.rpt -pb SimulatedDevice_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 742.500 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 15 02:55:55 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 743.098 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 15 12:26:37 2022...

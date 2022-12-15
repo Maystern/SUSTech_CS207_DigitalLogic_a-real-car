@@ -149,10 +149,10 @@ always @(posedge sys_clk) begin
         www <= 32'b0;
     end else if (state == starting || state == moving) begin
         if (www <= 32'd50000000) begin
-            if (turn_left_signal) begin
+            if (turn_left_signal && ~turn_right_signal) begin
                 turn_left <= 1'b1;
                 turn_right <= 1'b0;
-            end else if (turn_right_signal) begin
+            end else if (turn_right_signal && ~turn_left_signal) begin
                  turn_left <= 1'b0;
                  turn_right <= 1'b1;
             end else begin

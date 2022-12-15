@@ -31,10 +31,10 @@ module SimulatedDevice(
 //    input move_backward_signal,
     input place_barrier_signal,
     input destroy_barrier_signal,
-    output front_detector,
-    output back_detector,
-    output left_detector,
-    output right_detector,
+    output reg front_detector,
+    output reg back_detector,
+    output reg left_detector,
+    output reg right_detector,
     input stop_engine_signal,
     input start_engine_signal,
     input reverse_signal,
@@ -55,12 +55,23 @@ module SimulatedDevice(
 //    wire [7:0] in = {2'b10, destroy_barrier_signal, place_barrier_signal, turn_right_signal, turn_left_signal, move_backward_signal, move_forward_signal};
     reg [7:0] in;
     wire [7:0] rec;
-    assign front_detector = rec[0];
-    assign back_detector = rec[1];
-    assign left_detector = rec[2];
-    assign right_detector = rec[3];
+    
     always @(posedge sys_clk) begin
-        in <= {2'b10, destroy_barrier_signal, place_barrier_signal, turn_right_signal && (manual_starting || manual_moving), turn_left_signal && (manual_starting || manual_moving), reverse_signal && manual_moving, ~reverse_signal && manual_moving};
+        if (engine_power == 1'b1) begin
+            front_detector <= rec[0];
+            back_detector <= rec[1];
+            left_detector <= rec[2];
+            right_detector <= rec[3];
+        end else begin
+            front_detector <= 1'b0;
+            back_detector <= 1'b0;
+            left_detector <= 1'b0;
+            right_detector <= 1'b0;
+        end
+    end
+
+    always @(posedge sys_clk) begin
+        in <= {2'b10, destroy_barrier_signal, place_barrier_signal, (turn_right_signal ^ reverse_signal) && (manual_starting || manual_moving) && ~(turn_left_signal ^ reverse_signal), (turn_left_signal ^ reverse_signal) && (manual_starting || manual_moving) && ~(turn_right_signal ^ reverse_signal), reverse_signal && manual_moving, ~reverse_signal && manual_moving};
     end
     uart_top md(.clk(sys_clk), .rst(0), .data_in(in), .data_rec(rec), .rxd(rx), .txd(tx));
     manual_top manual_device(sys_clk, stop_engine_signal, start_engine_signal, reverse_signal,clutch_signal,brake_signal,throttle_signal, turn_left_signal,turn_right_signal,engine_power, manual_not_starting, manual_starting, manual_moving, turn_left, turn_right, seg1, seg0, seg_en);
