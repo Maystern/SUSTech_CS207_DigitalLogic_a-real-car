@@ -1,1 +1,0 @@
-UART.vhd,vhdl,xil_defaultlib,../../../../../../Desktop/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/ip/UART/sim/UART.vhd,
