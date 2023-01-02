@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1672596117">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1672670445">
   <File Type="PA-TCL" Name="SimulatedDevice.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="SimulatedDevice_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SimulatedDevice_reports.tcl"/>
   <File Type="RDS-RDS" Name="SimulatedDevice.vds"/>
   <File Type="RDS-UTIL" Name="SimulatedDevice_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SimulatedDevice_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="SimulatedDevice.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="SimulatedDevice_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="SimulatedDevice_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/RAM_set.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v"/>
+        <Attr Name="ImportTime" Val="1672405858"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/auto_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../SUSTech_DigitalLogic_Project_a-real-car-main/final.srcs/sources_1/new/auto_top.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/SUSTech_DigitalLogic_Project_a-real-car-main/final.srcs/sources_1/new/auto_top.v"/>
         <Attr Name="ImportTime" Val="1672577860"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -49,7 +55,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/semiauto_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../SUSTech_DigitalLogic_Project_a-real-car-main/final.srcs/sources_1/new/semiauto_top.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/SUSTech_DigitalLogic_Project_a-real-car-main/final.srcs/sources_1/new/semiauto_top.v"/>
         <Attr Name="ImportTime" Val="1672577918"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -58,7 +64,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/uart_rx.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_rx.v"/>
         <Attr Name="ImportTime" Val="1666795914"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -67,7 +73,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/uart_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_top.v"/>
         <Attr Name="ImportTime" Val="1667280830"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -76,8 +82,17 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/uart_tx.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/uart_tx.v"/>
         <Attr Name="ImportTime" Val="1666794930"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v"/>
+        <Attr Name="ImportTime" Val="1672667718"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -85,7 +100,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/dev_top.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/dev_top.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/new/dev_top.v"/>
         <Attr Name="ImportTime" Val="1671042804"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -95,7 +110,7 @@
     <File Path="$PSRCDIR/sources_1/ip/UART/UART.xci">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/ip/UART/UART.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/CS207-2022f-ARealCar/SimulatedDevice_src/sources_1/ip/UART/UART.xci"/>
         <Attr Name="ImportTime" Val="1666791482"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -112,7 +127,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/new/cons.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/CS207-2022f-ARealCar/SimulatedDevice_src/constrs_1/new/cons.xdc"/>
         <Attr Name="ImportTime" Val="1671042279"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

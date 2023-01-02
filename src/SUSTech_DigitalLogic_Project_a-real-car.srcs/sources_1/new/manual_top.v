@@ -40,17 +40,20 @@ module manual_top(
     output [7: 0] seg1,
     output [7: 0] seg0,
     output [7: 0] seg_en,
-    input total_engine_power
+    input total_engine_power, 
+    output[31:0] mileage,
+    output reg[2:0]  state
 );
 parameter poweron = 3'b000, poweroff = 3'b001;
 parameter not_starting = 3'b010, starting = 3'b011, moving = 3'b100;
-reg[2: 0] state = poweroff, next_state = poweroff;
+reg [2:0] next_state = poweroff;
 reg [31: 0] cnt = 32'b0;
 reg time_up = 1'b0;
 reg flag_stop_engine = 1'b0;
 parameter period = 32'd100000000;
-
-odometer om(sys_clk, (state == poweroff) || (enable == 1'b0), (state == moving) && (enable == 1'b1), seg1, seg0, seg_en);
+wire rst;
+assign rst = ~stop_engine;
+odometer om(sys_clk, (state == poweroff) || (enable == 1'b0), (state == moving) && (enable == 1'b1), seg1, seg0, seg_en, mileage);
 
 always @(posedge sys_clk) begin
     if (enable == 1'b1) begin
@@ -119,8 +122,13 @@ always @(posedge sys_clk) begin
     end
 end
 
-always @(posedge sys_clk) begin
-    if (enable == 1'b1) begin
+always @(posedge sys_clk or negedge rst) begin
+    if(!rst)
+    begin
+        state <= poweroff;
+        next_state <= poweroff;
+    end
+    else if (enable == 1'b1) begin
     case (state)
         poweron:begin
             next_state <= not_starting;

@@ -26,7 +26,8 @@ module odometer(
     input encounter,
     output [7: 0] seg1,
     output [7: 0] seg0,
-    output reg [7: 0] seg_en
+    output reg [7: 0] seg_en,
+    output reg[31:0] nums
 );
 reg [2: 0] cnt = 3'b000;
 reg [2: 0] next_cnt = 3'b001;
@@ -37,8 +38,8 @@ light_7seg_ego1 light1(sw1, ~reset, seg1);
 light_7seg_ego1 light2(sw0, ~reset, seg0);
 
 reg [31: 0] ttt = 32'd0; 
-reg [31: 0] nums = 32'd0;
 reg [31: 0] cntt = 32'b0;
+reg [31: 0] nums = 32'd0;
 
 always @ (posedge sys_clk) begin
     if (reset == 1'b1) begin

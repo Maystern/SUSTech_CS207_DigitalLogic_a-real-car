@@ -22,6 +22,7 @@
 
 module SimulatedDevice(
     input sys_clk, //bind to P17 pin (100MHz system clock)
+    input rst,
     input rx, //bind to N5 pin
     output tx, //bind to T4 pin
     input turn_left_signal,
@@ -49,8 +50,14 @@ module SimulatedDevice(
     input enable_auto_signal,
     output reg manual_state,
     output reg semiauto_state,
-    output reg auto_state
+    output reg auto_state, 
+    output[3:0] red, 
+    output[3:0] green, 
+    output[3:0] blue, 
+    output hs, 
+    output vs  
     );
+    wire[31:0] mileage;
     reg [7:0] in;
     wire [3:0] tmp_in1, tmp_in2; 
     wire engine_power1, engine_power2, engine_power3;
@@ -63,13 +70,17 @@ module SimulatedDevice(
     reg [31: 0] total_engine_power_cnt = 32'b0;
     parameter total_engine_power_time = 32'd100000000; 
     wire manual_not_starting, manual_starting, manual_moving;
+    wire[2:0] m_state;
+    wire[7:0] state;
+    //assign state = {m_state,enable[0], enable[1],engine_power,enable[2]};
+    assign state = {enable[2], engine_power, enable[1:0], m_state};
     always @(posedge sys_clk) begin
         case ({enable_manual_signal, enable_semiauto_signal, enable_auto_signal})
                3'b100: begin 
                     engine_power <= engine_power1;
                     place_barrier_signal <= 1'b0; destroy_barrier_signal <= 1'b0;
                     in <= {2'b10, destroy_barrier_signal, place_barrier_signal, (turn_right_signal ^ reverse_signal) && (manual_starting || manual_moving) && ~(turn_left_signal ^ reverse_signal), (turn_left_signal ^ reverse_signal) && (manual_starting || manual_moving) && ~(turn_right_signal ^ reverse_signal), reverse_signal && manual_moving, ~reverse_signal && manual_moving};
-                    enable <= 3'b100;
+                    enable <= 3'b001;
                     if (total_engine_power)
                         {manual_state, semiauto_state, auto_state} <= 3'b100;
                     else 
@@ -89,7 +100,7 @@ module SimulatedDevice(
                     engine_power <= engine_power3;
                     place_barrier_signal <= place_barrier_signal2; destroy_barrier_signal <= destroy_barrier_signal2;
                     in <= {2'b10, destroy_barrier_signal, place_barrier_signal,tmp_in2};
-                    enable <= 3'b001;
+                    enable <= 3'b100;
                     if (total_engine_power)
                         {manual_state, semiauto_state, auto_state} <= 3'b001;
                     else 
@@ -138,8 +149,8 @@ module SimulatedDevice(
     
     
     uart_top md(.clk(sys_clk), .rst(0), .data_in(in), .data_rec(rec), .rxd(rx), .txd(tx));
-    
-    manual_top manual_device(enable[2], sys_clk, ~stop_engine_signal, start_engine_signal, reverse_signal,clutch_signal,brake_signal,throttle_signal, turn_left_signal,turn_right_signal,engine_power1, manual_not_starting, manual_starting, manual_moving, turn_left, turn_right, seg1, seg0, seg_en, total_engine_power);
+    vga_top vga(sys_clk, stop_engine_signal, mileage, state, red, green, blue, hs, vs);
+    manual_top manual_device(enable[0], sys_clk, ~stop_engine_signal, start_engine_signal, reverse_signal,clutch_signal,brake_signal,throttle_signal, turn_left_signal,turn_right_signal,engine_power1, manual_not_starting, manual_starting, manual_moving, turn_left, turn_right, seg1, seg0, seg_en, total_engine_power, mileage, m_state);
     semiauto_top semiauto_device(enable[1], sys_clk, ~stop_engine_signal, start_engine_signal,tmp_in1[3], tmp_in1[2], tmp_in1[0], tmp_in1[1], engine_power2, destroy_barrier_signal1, place_barrier_signal1, rec[0] , rec[3], rec[1], rec[2], go_straight_signal, turn_right_signal, turn_left_signal, reverse_signal_button, total_engine_power);
-    auto_top auto_device(enable[0], sys_clk, ~stop_engine_signal, start_engine_signal,tmp_in2[3], tmp_in2[2], tmp_in2[0], tmp_in2[1], engine_power3, destroy_barrier_signal2, place_barrier_signal2, rec[0] , rec[3], rec[1], rec[2], total_engine_power);
+    auto_top auto_device(enable[2], sys_clk, ~stop_engine_signal, start_engine_signal,tmp_in2[3], tmp_in2[2], tmp_in2[0], tmp_in2[1], engine_power3, destroy_barrier_signal2, place_barrier_signal2, rec[0] , rec[3], rec[1], rec[2], total_engine_power);
 endmodule

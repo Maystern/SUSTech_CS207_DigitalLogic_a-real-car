@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/bin/nt64;C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/lib/nt64:C:/Users/Maystern/Vivado/2017.4/bin
+  PATH=E:/Vivado/Vivado/2017.4/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2017.4/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2017.4/bin
 else
-  PATH=C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/bin/nt64;C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/lib/nt64:C:/Users/Maystern/Vivado/2017.4/bin:$PATH
+  PATH=E:/Vivado/Vivado/2017.4/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2017.4/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2017.4/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.runs/synth_1'
+HD_PWD='E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
