@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1672670445">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1672670529">
+  <File Type="ROUTE-PWR" Name="SimulatedDevice_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SimulatedDevice.tcl"/>
+  <File Type="PWROPT-DCP" Name="SimulatedDevice_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="SimulatedDevice_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="SimulatedDevice_reports.tcl"/>
-  <File Type="RDS-RDS" Name="SimulatedDevice.vds"/>
-  <File Type="RDS-UTIL" Name="SimulatedDevice_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="SimulatedDevice_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="SimulatedDevice.dcp"/>
+  <File Type="BG-DRC" Name="SimulatedDevice.drc"/>
+  <File Type="OPT-HWDEF" Name="SimulatedDevice.hwdef"/>
+  <File Type="OPT-DCP" Name="SimulatedDevice_opt.dcp"/>
+  <File Type="OPT-DRC" Name="SimulatedDevice_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="SimulatedDevice_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SimulatedDevice_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SimulatedDevice_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SimulatedDevice_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SimulatedDevice_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SimulatedDevice_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SimulatedDevice_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="SimulatedDevice_physopt.dcp"/>
+  <File Type="BG-BIT" Name="SimulatedDevice.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SimulatedDevice_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SimulatedDevice_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SimulatedDevice_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="SimulatedDevice_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SimulatedDevice_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="SimulatedDevice_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="SimulatedDevice.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SimulatedDevice_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="SimulatedDevice.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SimulatedDevice_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="SimulatedDevice.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SimulatedDevice_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="SimulatedDevice.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="SimulatedDevice_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="SimulatedDevice_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SimulatedDevice_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SimulatedDevice_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SimulatedDevice_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SimulatedDevice_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="SimulatedDevice_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="SimulatedDevice.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SimulatedDevice_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SimulatedDevice_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="SimulatedDevice.nky"/>
+  <File Type="BITSTR-BMM" Name="SimulatedDevice_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SimulatedDevice.mmi"/>
+  <File Type="BITSTR-LTX" Name="SimulatedDevice.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="SimulatedDevice.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/RAM_set.v">
@@ -138,7 +179,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-    <Step Id="synth_design"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
   </Strategy>
 </GenRun>

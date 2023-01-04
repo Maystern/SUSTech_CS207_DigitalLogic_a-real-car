@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.runs/synth_1'
+HD_PWD='E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,8 @@ EAStep()
      fi
 }
 
-EAStep vivado -log SimulatedDevice.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SimulatedDevice.tcl
+# pre-commands:
+/bin/touch .init_design.begin.rst
+EAStep vivado -log SimulatedDevice.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SimulatedDevice.tcl -notrace
+
+

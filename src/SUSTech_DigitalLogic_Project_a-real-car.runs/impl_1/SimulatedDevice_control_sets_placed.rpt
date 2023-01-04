@@ -1,0 +1,127 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jan  2 22:42:35 2023
+| Host         : LAPTOP-6KGVJPCT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SimulatedDevice_control_sets_placed.rpt
+| Design       : SimulatedDevice
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    58 |
+| Unused register locations in slices containing registers |   136 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              76 |           41 |
+| No           | No                    | Yes                    |             448 |          143 |
+| No           | Yes                   | No                     |             222 |           53 |
+| Yes          | No                    | No                     |             183 |           67 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |             555 |          156 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+---------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                      Enable Signal                      |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++-----------------------+---------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|  md/my_divclk/clk_ms  |                                                         |                                                         |                1 |              1 |
+|  md/my_divclk/clk_16x | md/rx/rxd1_i_1_n_0                                      |                                                         |                1 |              1 |
+|  sys_clk_IBUF_BUFG    | manual_device/reverse_shutdown16_out                    |                                                         |                1 |              1 |
+|  sys_clk_IBUF_BUFG    |                                                         | manual_device/turn_left_i_1_n_0                         |                1 |              2 |
+|  md/my_divclk/clk_x   |                                                         |                                                         |                2 |              3 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[7]_i_1_n_0                        |                                                         |                2 |              4 |
+|  md/my_divclk/clk_16x | md/rx/data_out1[3]_i_1_n_0                              |                                                         |                3 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[31]_i_2_n_0                       | manual_device/om/nums[31]_i_1_n_0                       |                2 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[19]_i_1_n_0                       |                                                         |                3 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[3]_i_1_n_0                        |                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/sw0_1                                  |                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[23]_i_1_n_0                       |                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[11]_i_2_n_0                       | manual_device/om/nums[11]_i_1_n_0                       |                2 |              4 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/tmp_detector_state[3]_i_1__0_n_0        |                                                         |                3 |              4 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/next_state[3]_i_2_n_0                   | semiauto_device/next_state[3]_i_1_n_0                   |                2 |              4 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/car_turn_right_i_1_n_0                  |                                                         |                1 |              4 |
+|  sys_clk_IBUF_BUFG    | auto_device/tmp_detector_state                          |                                                         |                2 |              4 |
+|  sys_clk_IBUF_BUFG    | auto_device/next_state[3]_i_2__0_n_0                    | auto_device/next_state[3]_i_1__0_n_0                    |                3 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[15]_i_1_n_0                       |                                                         |                2 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/nums[27]_i_1_n_0                       |                                                         |                2 |              4 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/sw1_0                                  |                                                         |                2 |              4 |
+|  md/my_divclk/clk_x   | md/tx/present_state                                     |                                                         |                3 |              5 |
+|  sys_clk_IBUF_BUFG    | auto_device/car_turn_right_i_1__0_n_0                   |                                                         |                3 |              6 |
+|  md/my_divclk/clk_x   | md/tx/data_in_buf                                       |                                                         |                1 |              6 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/next_cnt_3                             |                                                         |                3 |              8 |
+|  md/my_divclk/clk_16x |                                                         |                                                         |                5 |              9 |
+|  vga/R_clk_25M        | vga/R_v_cnt[11]_i_1_n_0                                 | vga/u_ram_11/c5_reg[6]_0                                |                3 |             12 |
+|  md/my_divclk/clk_16x | md/rx/clk_16x_cnt[15]_i_2_n_0                           | md/rx/clk_16x_cnt[15]_i_1_n_0                           |                4 |             16 |
+|  sys_clk_IBUF_BUFG    | state[3]                                                | manual_device/www[31]_i_1_n_0                           |                7 |             20 |
+|  vga/R_clk_25M        |                                                         | vga/u_ram_11/c5_reg[6]_0                                |                8 |             24 |
+|  sys_clk_IBUF_BUFG    |                                                         | md/my_divclk/clk_16x_2                                  |                8 |             31 |
+|  sys_clk_IBUF_BUFG    |                                                         | manual_device/om/ttt[31]_i_1_n_0                        |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/destroy_beacon_cnt[31]_i_2_n_0          | semiauto_device/destroy_beacon_cnt[31]_i_1_n_0          |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/place_beacon_cnt[31]_i_2_n_0            | semiauto_device/place_beacon_cnt[31]_i_1_n_0            |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | total_engine_power_cnt[31]_i_2_n_0                      | total_engine_power_cnt[31]_i_1_n_0                      |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | auto_device/destroy_beacon_cnt[31]_i_2__0_n_0           | auto_device/destroy_beacon_cnt[31]_i_1__0_n_0           |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | auto_device/detector_cnt[31]_i_2_n_0                    | auto_device/detector_cnt[31]_i_1__0_n_0                 |                7 |             31 |
+|  sys_clk_IBUF_BUFG    | auto_device/left_right_place_beacon_cnt[31]_i_2__0_n_0  | auto_device/left_right_place_beacon_cnt[31]_i_1__0_n_0  |                8 |             31 |
+|  sys_clk_IBUF_BUFG    |                                                         | md/my_divclk/clk_x_0                                    |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | auto_device/place_beacon_straight_cnt[31]_i_2__0_n_0    | auto_device/place_beacon_straight_cnt[31]_i_1__0_n_0    |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | auto_device/place_going_cnt[31]_i_2__0_n_0              | auto_device/place_going_cnt[31]_i_1__0_n_0              |                8 |             31 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/place_beacon_straight_cnt[31]_i_2_n_0   | semiauto_device/place_beacon_straight_cnt[31]_i_1_n_0   |                8 |             31 |
+|  sys_clk_IBUF_BUFG    |                                                         | md/my_divclk/clk_ms_1                                   |                8 |             31 |
+|  sys_clk_IBUF_BUFG    |                                                         | manual_device/cnt[31]_i_1_n_0                           |                7 |             32 |
+|  sys_clk_IBUF_BUFG    | manual_device/om/manual_moving2_out                     | manual_device/om/reset0                                 |                8 |             32 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/left_right_place_beacon_cnt[31]_i_2_n_0 | semiauto_device/left_right_place_beacon_cnt[31]_i_1_n_0 |                9 |             32 |
+|  sys_clk_IBUF_BUFG    |                                                         | semiauto_device/cnt[31]_i_1__0_n_0                      |                7 |             32 |
+|  sys_clk_IBUF_BUFG    | auto_device/turning_cnt[0]_i_1__0_n_0                   |                                                         |                8 |             32 |
+|  sys_clk_IBUF_BUFG    | auto_device/place_beacon_cnt[31]_i_2__0_n_0             | auto_device/place_beacon_cnt[31]_i_1__0_n_0             |                9 |             32 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/place_going_cnt[31]_i_2_n_0             | semiauto_device/place_going_cnt[31]_i_1_n_0             |                9 |             32 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/straight_cnt[31]_i_2_n_0                | semiauto_device/straight_cnt[31]_i_1_n_0                |                9 |             32 |
+|  sys_clk_IBUF_BUFG    |                                                         | auto_device/cnt[31]_i_1__1_n_0                          |                6 |             32 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/turning_cnt[0]_i_1_n_0                  |                                                         |                8 |             32 |
+|  sys_clk_IBUF_BUFG    | semiauto_device/detector_cnt[31]_i_1_n_0                | semiauto_device/tmp_detector_state[3]_i_1__0_n_0        |               12 |             32 |
+|  sys_clk_IBUF_BUFG    | auto_device/straight_cnt[31]_i_2__0_n_0                 | auto_device/straight_cnt[31]_i_1__0_n_0                 |                9 |             32 |
+|  sys_clk_IBUF_BUFG    | state[3]                                                |                                                         |               16 |             44 |
+|  sys_clk_IBUF_BUFG    |                                                         |                                                         |               33 |             63 |
+|  sys_clk_IBUF_BUFG    |                                                         | vga/u_ram_11/c5_reg[6]_0                                |              135 |            424 |
++-----------------------+---------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     3 |
+| 2      |                     1 |
+| 3      |                     1 |
+| 4      |                    16 |
+| 5      |                     1 |
+| 6      |                     2 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 12     |                     1 |
+| 16+    |                    31 |
++--------+-----------------------+
+
+
