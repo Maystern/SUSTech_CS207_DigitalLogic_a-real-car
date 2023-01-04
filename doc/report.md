@@ -8,7 +8,7 @@
 
 ------
 
-- 小组成员：张天悦（学号：12112908）罗嘉诚（学号：12112910）
+- 小组成员：张天悦（学号：12112908）、罗嘉诚（学号：12112910）
 - 完成日期：2023 年 01 月 08 日
 
 ## 项目开发计划
@@ -579,11 +579,17 @@ endmodule
 - **RTL** 分析后生成的电路图：[**RTL_ANALYSIS_Schematic.pdf**](https://github.com/Maystern/SUSTech_DigitalLogic_Project_a-real-car/blob/main/doc/RTL_ANALYSIS_Schematic.pdf)。
 - **综合** 分析后生成的电路图：[**SYNTHESIS_Schematic.pdf**](https://github.com/Maystern/SUSTech_DigitalLogic_Project_a-real-car/blob/main/doc/SYNTHESIS_Schematic.pdf)。
 
+<div style="page-break-after:always;"></div>
+
 ## 开发过程中间的经验总结及优化
 
 - 张天悦（学号：12112908）
 
+  ​		在本次项目中我学习到了很多，首先就是找到了设计与实现之间的平衡与互补。在本次项目之前我总是希望全局设计好项目的每一个细节，但在实际工作中这并不可能完成。这往往导致花费过多时间在前期思考上，最后在很多错误却要在实现中才能遇到，往往会影响整个设计。本次 **Project** 我们组边设计边实现，设计与实现形成互补，极大的提高了项目完成的效率。
 
+  ​		再者，在统筹规划多个模块之间的综合实现的过程中，让我更深入的理解到了**verilog** 编程中时间的概念：每个模块所有操作按照时钟的跳变沿为参照同时进行，而非其它编程语言的线性运行模式。由此理解不同信号之间的关系，从而思考不同模块的输入输出各个信号之间如何绑定才能更加正确高效。
+
+  ​		此外，在本次作业完成过程中我认识到了 **verilog** 模块化编程的高效。刚开始做 **VGA** 功能时，为要实时控制较大区域中每个像素的显示而感到头疼。但经过思考发现通过提前在一个模块中设置$7 \times 8$ 个像素大小的 10 个数字和 26 个字母对应的寄存器的值，然后再将此模块与 **VGA** 顶层模块的对应信号绑定可以大大减少编写 **VGA** 顶层模块时的工作量。
 
 - 罗嘉诚（学号：12112910）
 
@@ -599,7 +605,12 @@ endmodule
 
   ​		最后，报告写作也并不是一件容易的事情，如何将我们在项目的成果用简洁精美的报告展示出来并不容易。说实话，经过这次的报告撰写，确实提高了我的报告写作能力。
 
-
-
 # Thank You !
 
+<center> 
+    项目报告较长，非常感谢您看到最后！
+</center>
+
+<div align=center>
+    GitHub @<a href = https://github.com/maystern>Maystern</a> @<a href = https://github.com/HeyHowAreYouDoing>HeyHowAreYouDoing</a>
+</div>
