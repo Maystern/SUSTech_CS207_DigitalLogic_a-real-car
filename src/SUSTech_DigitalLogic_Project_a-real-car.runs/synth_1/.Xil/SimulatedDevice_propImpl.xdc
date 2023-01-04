@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc rfile:../../../SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc rfile:../../../SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N5 [get_ports rx]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

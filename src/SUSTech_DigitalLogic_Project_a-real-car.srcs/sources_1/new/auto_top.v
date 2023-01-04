@@ -36,10 +36,6 @@ module auto_top(
    input back_detector,
    input left_detector,
    input right_detector,
-//   output reg real_front_detector,
-//   output reg real_back_detector,
-//   output reg real_left_detector,
-//   output reg real_right_detector,
    input total_engine_power
 );
 parameter poweron = 4'b0000, poweroff = 4'b0001, going = 4'b0010;

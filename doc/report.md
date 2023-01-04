@@ -346,7 +346,7 @@ EGO1 配备的 FPGA (XC7A35T-1CSG324C) 具有大容量高性能等特点，能�
 
 本项目可以分为五个模块：全局设置模块、手动驾驶模块、半自动驾驶模块、全自动驾驶模块、VGA模块。
 
-其中 VGA 模块相对独立，进行实时显示。而其他四个模块中存在不同状态，依据电路的外部输入进行状态转换，并将电路相关信号进行输出，以控制模拟测试程序 **DriveCar.exe** 中小车的运动状态、EGO1开发板上相关输出设备。
+其中 VGA 模块相对独立，进行实时显示。而其他四个模块中存在不同状态，依据电路的外部输入进行状态转换，并将电路相关信号进行输出，以控制模拟测试程序 **DriveCar.exe** 中小车的运动状态和EGO1开发板上相关输入输出设备。
 
 ### 状态流程图与模块工作机制
 
@@ -356,5 +356,230 @@ EGO1 配备的 FPGA (XC7A35T-1CSG324C) 具有大容量高性能等特点，能�
 
 ### 电路结构框图
 
+#### 项目结构
 
+在我们的 **vivado** 工程中，顶层模块是 `dev_top` 模块，该模块主要实现小车各模块之间的切换，以及引擎开启关闭的探测并控制小车引擎。
+
+子模块包括：
+
+- `uart_top` 模块，该模块主要用于实现 **UART** 连接，并与模拟测试程序 **DriveCar.exe** 交互。
+- `vga_top` 模块，该模块主要用于实现外接显示器显示，显示小车当前运动状态。
+- `manual_top` 模块，该模块主要用于实现小车的手动驾驶模式。
+- `semiauto_top` 模块，该模块主要用于实现小车的半自动驾驶模式。
+- `auto_top` 模块，该模块主要用于实现小车的全自动驾驶模式。
+
+ **vivado** 工程的项目结构图如下：
+
+<img src="https://raw.githubusercontent.com/Maystern/picbed/main/image-20230104165548253.png" alt="image-20230104165548253" style="zoom: 50%;" />
+
+#### 电路结构框图 <span id="3.2.2"> </span>
+
+我们使用 **vivado** 的 **RTL** 分析与**综合**后生成的电路图，展示顶层模块与各子模块、各子模块之间的关系。
+
+- 这是使用 **RTL** 分析后生成的电路图。（图片清晰度足够高，可以按住 `Ctrl + 鼠标滚轮`放大查看）
+
+![image-20230104172335633](https://raw.githubusercontent.com/Maystern/picbed/main/image-20230104172335633.png)
+
+- 这是使用 **综合** 后生成的电路图。（图片清晰度足够高，可以按住 `Ctrl + 鼠标滚轮`放大查看）
+
+![1223](https://raw.githubusercontent.com/Maystern/picbed/main/1223.png)
+
+本项目**A Real Car**的顶层模块 `dev_top` 使用了 `uart_top` 、`vga_top` 、`manual_top` 、`semiauto_top`、`auto_top` 五个子模块。
+
+其中：
+
+- `uart_top` 模块实现 **UART** 连接，并与模拟测试程序 **DriveCar.exe** 交互功能，使用顶层模块中的时钟信号、复位信号、数据输入、数据输出信号，并将处理后的结果段码信号、数据发送信号传递回顶层模块，以供其他子模块使用。
+- `vga_top` 模块实现 **VGA** 显示小车运动状态，使用顶层模块中的时钟信号、复位信号、引擎状态、小车的模式与手动模式的状态拼接成的状态值、手动模式记录的公里数转换为十进制后的值，并将处理后的红色信号、绿色信号、蓝色信号、行同步信号、场同步信号传递回顶层模块，用于实现 **VGA** 显示。
+- `manual_top` 模块实现小车的手动驾驶模式，使用顶层模块中的复位信号、时钟信号、关闭引擎信号、开启引擎信号、倒车档信号、离合信号、刹车信号、油门信号、左转向信号、右转向信号、引擎状态信号，并将处理后的新引擎状态信号、未起步信号、起步信号、移动信号、左转灯信号、右转灯信号、里程表信号、小车的模式与手动模式的状态拼接成的状态值传递回顶层模块，用于实现转向灯、里程表、引擎指示灯等功能，并将相关信号供其他子模块使用。
+- `semiauto_top` 模块实现小车的半自动驾驶模式，使用顶层模块中的复位信号、时钟信号、关闭引擎信号、开启引擎信号、前探测器信号、后探测器信号、左探测性信号、右探测器信号、前进指令信号、右转指令信号、左转指令信号、掉头指令信号、引擎状态信号，并将处理后的左转向信号、右转向信号、移动信号、倒车信号、新引擎状态信号、摧毁信标信号、放置信标信号传递回顶层模块，用于实现半自动驾驶功能，并将相关信号供其他子模块使用。
+- `auto_top` 模块实现小车的全自动驾驶模式，使用顶层模块中的复位信号、时钟信号、关闭引擎信号、开启引擎信号、前探测器信号、后探测器信号、左探测性信号、右探测器信号、引擎状态信号，并将处理后的左转向信号、右转向信号、移动信号、倒车信号、新引擎状态信号、摧毁信标信号、放置信标信号传递回顶层模块，用于实现全自动驾驶功能，并将相关信号供其他子模块使用。
+
+#### 各子模块功能、输入输出端口规格说明及结构图
+
+##### 各子模块功能
+
+| 模块名称     | 功能                                                       |
+| ------------ | ---------------------------------------------------------- |
+| uart_top     | 实现 **UART** 连接，并与模拟测试程序 **DriveCar.exe** 交互 |
+| vga_top      | 实现外接显示器显示，显示小车当前运动状态                   |
+| manual_top   | 实现小车的手动驾驶模式                                     |
+| semiauto_top | 实现小车的半自动驾驶模式                                   |
+| auto_top     | 实现小车的全自动驾驶模式                                   |
+
+##### 输入输出端口规格说明
+
+- `uart_top` 模块（顶层模块）
+
+```verilog
+module SimulatedDevice (
+    input sys_clk, //系统时钟
+    input rx, // UART 模块与程序交互
+    output tx, // UART 模块与程序交互
+    input turn_left_signal, // 左转信号
+    input turn_right_signal, // 右转信号
+    input stop_engine_signal, // 熄火信号、复位信号
+    input start_engine_signal, // 点火信号
+    input reverse_signal, // 倒车挡信号
+    input clutch_signal, // 离合器信号
+    input brake_signal, // 刹车信号
+    input throttle_signal, // 油门信号
+    output reg engine_power, // 引擎状态指示信号
+    output turn_left, // 左转向灯信号
+    output turn_right, // 右转向灯信号
+    output [7: 0] seg1, // 里程表高位段选信号
+    output [7: 0] seg0, // 里程表低位段选信号
+    output [7: 0] seg_en, // 里程表片选信号
+    input go_straight_signal, // 直行信号
+    input reverse_signal_button, // 掉头信号
+    input enable_manual_signal, // 开启手动驾驶模式信号
+    input enable_semiauto_signal, // 开启半自动驾驶信号
+    input enable_auto_signal, // 开启全自动驾驶信号
+    output reg manual_state, // 手动驾驶模式指示信号
+    output reg semiauto_state, // 半驾驶模式指示信号
+    output reg auto_state,  // 全自动驾驶模式指示信号
+    output[3:0] red,  // VGA 红色信号
+    output[3:0] green,  // VGA 绿色信号
+    output[3:0] blue,  // VGA 蓝色信号
+    output hs, // VGA 行同步信号
+    output vs  // VGA 场同步信号
+);
+	// ...
+endmodule
+```
+
+- `vga_top` 模块（实现**VGA**显示功能的子模块）
+
+```verilog
+module vga_top (
+    input clk,  // 系统时钟
+    input rst,  // 复位信号
+    input [31:0] record, // 手动模式记录的公里数转换为十进制后的值
+    input[6:0] state, // 小车的模式与手动模式的状态拼接成的状态值
+    output reg[3:0] red, // VGA 红色信号
+    output reg[3:0] green, // VGA 绿色信号
+    output reg[3:0] blue, // VGA 蓝色信号
+    output hs, // VGA 行同步信号
+    output vs  // VGA 场同步信号
+);
+	// ...
+endmodule
+```
+
+- `manual_top` 模块（实现**手动驾驶模式**功能的子模块）
+
+```verilog
+module manual_top(
+    input enable, // 复位信号
+    input sys_clk, // 系统时钟
+    input stop_engine, // 关闭引擎信号
+    input start_engine, // 开启引擎信号
+    input reverse, // 倒车挡信号
+    input clutch, // 离合器信号
+    input brake, // 刹车信号
+    input throttle, // 油门信号
+    input turn_left_signal, // 左转信号
+    input turn_right_signal, // 右转信号
+    output reg engine_power_signal, // 新引擎状态信号
+    output reg manual_not_starting, // 手动挡未起步信号
+    output reg manual_starting, // 手动挡起步信号
+    output reg manual_moving, // 手动挡移动信号
+    output reg turn_left, // 左转信号
+    output reg turn_right, // 右转信号
+    output [7: 0] seg1, // 里程表高位段选信号
+    output [7: 0] seg0, // 里程表低位段选信号
+    output [7: 0] seg_en, // 里程表片选信号
+    input total_engine_power, // 当前引擎状态信号
+    output[31:0] mileage, // 里程表数值信号
+    output reg[2:0] state // 手动模式的状态拼接成的状态值
+);
+	// ...
+endmodule
+```
+
+- `semiauto_top` 模块（实现**半自动驾驶模式**功能的子模块）
+
+```verilog
+module semiauto_top(
+   input enable,  // 复位信号
+   input sys_clk, // 系统时钟
+   input stop_engine, // 关闭引擎信号
+   input start_engine, // 开启引擎信号
+   output reg car_turn_right, // 小车右转信号
+   output reg car_turn_left, // 小车左转信号
+   output reg car_go_forward, // 小车前进信号
+   output reg car_go_back, // 小车后退信号
+   output reg engine_power_signal, // 新引擎状态信号
+   output reg destroy_barrier_signal, // 摧毁信标信号
+   output reg place_barrier_signal, // 放置信标信号
+   input front_detector, // 前探测器障碍物信号
+   input back_detector, // 后探测器障碍物信号
+   input left_detector, //  左探测器障碍物信号
+   input right_detector, // 右探测器障碍物信号
+   input go_straight_signal, // 直行命令信号
+   input turn_right_signal, // 右转命令信号
+   input turn_left_signal, // 左转命令信号
+   input reverse_signal, // 掉头命令信号
+   input total_engine_power // 当前引擎状态信号
+);
+   // ...
+endmodule
+```
+
+- `auto_top` 模块（实现**自动驾驶模式**的子模块）
+
+```verilog
+module auto_top(
+   input enable, // 复位信号
+   input sys_clk, // 系统时钟
+   input stop_engine, // 关闭引擎信号
+   input start_engine, // 开启引擎信号
+   output reg car_turn_right, // 小车右转信号
+   output reg car_turn_left, // 小车左转信号
+   output reg car_go_forward, // 小车前进信号
+   output reg car_go_back, // 小车后退信号
+   output reg engine_power_signal, // 新引擎状态信号
+   output reg destroy_barrier_signal, // 摧毁信标信号
+   output reg place_barrier_signal,// 放置信标信号
+   input front_detector, // 前探测器障碍物信号
+   input back_detector, // 后探测器障碍物信号
+   input left_detector, //  左探测器障碍物信号
+   input right_detector, // 右探测器障碍物信号
+   input total_engine_power // 当前引擎状态信号
+);
+   // ...
+endmodule
+```
+
+##### 结构图
+
+请见 [**3.2.2 电路结构框图**](#3.2.2)，我们使用 **vivado** 的 **RTL** 分析和**综合**，分别生成相关的电路图。
+
+如需下载和查看 **PDF** 版本的电路结构图，请访问：
+
+- **RTL** 分析后生成的电路图：[**RTL_ANALYSIS_Schematic.pdf**](https://github.com/Maystern/SUSTech_DigitalLogic_Project_a-real-car/blob/main/doc/RTL_ANALYSIS_Schematic.pdf)。
+- **综合** 分析后生成的电路图：[**SYNTHESIS_Schematic.pdf**](https://github.com/Maystern/SUSTech_DigitalLogic_Project_a-real-car/blob/main/doc/SYNTHESIS_Schematic.pdf)。
+
+## 开发过程中间的经验总结及优化
+
+- 张天悦（学号：12112908）
+
+
+
+- 罗嘉诚（学号：12112910）
+
+  ​		首先从项目开发进行的全局来看，首先就将整个项目考虑的事无巨细几乎是不可能的。所以我们小组从项目开始，就稳扎稳打，每完成一个功能就进行仿真和上板测试。项目的完成就好像搭积木一样，从简单的实现到逐渐完善趋于完美，一步步走来很有成就感。
+
+  ​		其次，我认为 **verilog** 编程一个比较重要的技巧是明确当前时钟周期要干什么，下个时钟周期即要干什么，将较为整体的事情原子化、碎片化、状态化，便于硬件进行处理。如在项目中实现的小车转弯经过路口，我们将这个较为连续的事件转化为四个过程——直走探测路口、停止转向、直走通过路口、继续直行。将事件进行原子化、碎片化、状态化有助于提高电路的稳定度和编程的难度。
+
+  ​		然后，硬件描述语言的编程和一般的高级语言，在编程方面感觉非常不一样。后者更加强调编程时以自顶向下的顺序原则进行思考，前者更加强调以互相平行的并行原则思考。想要熟练掌握相关的技巧和编程方式，还是有一定难度。
+
+  ​		还有，在代码调试方面，硬件描述语言颇有难度。对于习惯一般高级语言的**输出调试法**或者**Debug调试法** 的我而言，逐渐习惯使用 **verilog** 中的 **Test Bench**，使用模拟方法调试代码，不是一件容易的事情，但好在我也逐渐在克服。
+
+  ​		然后，在实现 **bonus** 功能的自动驾驶模块时，我着实遇到了困难。我不怎么会玩迷宫，所谓的“右手原则”之前都没有听说过。通过查找互联网相关资料、询问队友和其他组的同学，我发现 “右手原则” 就是将右手始终碰着墙壁，保持直行。并且将这件事和 **DSAA** 课程中图的相关知识结合起来，我发现迷宫问题可以抽象为图中的寻找指定起点和终点的问题，可以使用 **DFS** 相关知识解决。并且根据放置信标，巧妙地记录了每个节点是否访问过的状态，从而解决了这个问题。所以，在遇到不熟悉的问题时，可以适当的寻求他人和其他资料的帮助，这有助于快速转化为熟悉擅长的问题，简化遇到的问题，这利于问题的解决。
+
+  ​		最后，报告写作也并不是一件容易的事情，如何将我们在项目的成果用简洁精美的报告展示出来并不容易。说实话，经过这次的报告撰写，确实提高了我的报告写作能力。
+
+
+
+# Thank You !
 

@@ -8,9 +8,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "E:/Vivado/Vivado/2017.4/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2017.4/ids_lite/ISE/lib/nt64;E:/Vivado/Vivado/2017.4/bin;";
+  PathVal = "C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/bin/nt64;C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/lib/nt64;C:/Users/Maystern/Vivado/2017.4/bin;";
 } else {
-  PathVal = "E:/Vivado/Vivado/2017.4/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2017.4/ids_lite/ISE/lib/nt64;E:/Vivado/Vivado/2017.4/bin;" + PathVal;
+  PathVal = "C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/bin/nt64;C:/Users/Maystern/Vivado/2017.4/ids_lite/ISE/lib/nt64;C:/Users/Maystern/Vivado/2017.4/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log SimulatedDevice.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SimulatedDevice.tcl -notrace" );
 

@@ -22,15 +22,10 @@
 
 module SimulatedDevice(
     input sys_clk, //bind to P17 pin (100MHz system clock)
-    input rst,
     input rx, //bind to N5 pin
     output tx, //bind to T4 pin
     input turn_left_signal,
-    input turn_right_signal,
-//    output front_detector,
-//    output back_detector,
-//    output left_detector,
-//    output right_detector,
+    input turn_right_signal, 
     input stop_engine_signal,
     input start_engine_signal,
     input reverse_signal,

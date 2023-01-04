@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1672670529">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1672823624">
   <File Type="PWROPT-DCP" Name="SimulatedDevice_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="SimulatedDevice_power_routed.rpt"/>
   <File Type="PA-TCL" Name="SimulatedDevice.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="SimulatedDevice_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="SimulatedDevice_reports.tcl"/>
   <File Type="BG-DRC" Name="SimulatedDevice.drc"/>
-  <File Type="OPT-DCP" Name="SimulatedDevice_opt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="SimulatedDevice_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SimulatedDevice_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="SimulatedDevice.hwdef"/>
+  <File Type="OPT-DCP" Name="SimulatedDevice_opt.dcp"/>
   <File Type="OPT-DRC" Name="SimulatedDevice_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="SimulatedDevice_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="SimulatedDevice_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SimulatedDevice_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="SimulatedDevice_placed.dcp"/>
   <File Type="PLACE-IO" Name="SimulatedDevice_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SimulatedDevice_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="SimulatedDevice_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="SimulatedDevice_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="SimulatedDevice_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SimulatedDevice_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="SimulatedDevice_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="SimulatedDevice_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="SimulatedDevice_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SimulatedDevice_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="SimulatedDevice_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SimulatedDevice_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="SimulatedDevice.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="SimulatedDevice_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="SimulatedDevice_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="SimulatedDevice_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="SimulatedDevice_routed_bb.dcp"/>
@@ -37,13 +48,18 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="SimulatedDevice_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="SimulatedDevice_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="SimulatedDevice_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SimulatedDevice_incremental_reuse_routed.rpt"/>
   <File Type="RDI-RDI" Name="SimulatedDevice.vdi"/>
   <File Type="ROUTE-CLK" Name="SimulatedDevice_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="SimulatedDevice_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SimulatedDevice_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SimulatedDevice_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SimulatedDevice_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SimulatedDevice_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="SimulatedDevice.nky"/>
   <File Type="BITSTR-BMM" Name="SimulatedDevice_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="SimulatedDevice.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="SimulatedDevice.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="SimulatedDevice.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
