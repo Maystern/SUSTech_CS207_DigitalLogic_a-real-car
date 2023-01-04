@@ -14,21 +14,21 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18008 
-WARNING: [Synth 8-2611] redeclaration of ansi port nums is not allowed [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
-WARNING: [Synth 8-976] nums has already been declared [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
-WARNING: [Synth 8-2654] second declaration of nums ignored [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
-INFO: [Synth 8-994] nums is declared here [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:30]
+INFO: Helper process launched with PID 47808 
+WARNING: [Synth 8-2611] redeclaration of ansi port nums is not allowed [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
+WARNING: [Synth 8-976] nums has already been declared [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
+WARNING: [Synth 8-2654] second declaration of nums ignored [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
+INFO: [Synth 8-994] nums is declared here [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:30]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 343.703 ; gain = 113.555
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 342.586 ; gain = 112.480
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'SimulatedDevice' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'SimulatedDevice' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:23]
 	Parameter total_engine_power_time bound to: 100000000 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:122]
-INFO: [Synth 8-638] synthesizing module 'uart_top' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:11]
-INFO: [Synth 8-638] synthesizing module 'divclk' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:71]
-INFO: [Synth 8-256] done synthesizing module 'divclk' (1#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:71]
-INFO: [Synth 8-638] synthesizing module 'uart_tx' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:122]
+INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:11]
+INFO: [Synth 8-638] synthesizing module 'divclk' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:71]
+INFO: [Synth 8-256] done synthesizing module 'divclk' (1#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:10]
 	Parameter idle bound to: 5'b00000 
 	Parameter start bound to: 5'b00001 
 	Parameter b0 bound to: 5'b00011 
@@ -41,20 +41,20 @@ INFO: [Synth 8-638] synthesizing module 'uart_tx' [E:/Learning/DigitalLogic/proj
 	Parameter b7 bound to: 5'b01101 
 	Parameter check bound to: 5'b01111 
 	Parameter stop bound to: 5'b01110 
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:51]
-WARNING: [Synth 8-6014] Unused sequential element clk_x_cnt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:47]
-INFO: [Synth 8-256] done synthesizing module 'uart_tx' (2#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:10]
-INFO: [Synth 8-638] synthesizing module 'uart_rx' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:51]
+WARNING: [Synth 8-6014] Unused sequential element clk_x_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:47]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (2#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:12]
 	Parameter width bound to: 8 - type: integer 
 	Parameter idle bound to: 1 - type: integer 
 	Parameter one bound to: 2 - type: integer 
 	Parameter two bound to: 3 - type: integer 
 	Parameter stop bound to: 4 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:68]
-WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:22]
-INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:12]
-INFO: [Synth 8-256] done synthesizing module 'uart_top' (4#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:11]
-INFO: [Synth 8-638] synthesizing module 'vga_top' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:68]
+WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:22]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:12]
+INFO: [Synth 8-256] done synthesizing module 'uart_top' (4#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:11]
+INFO: [Synth 8-638] synthesizing module 'vga_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:23]
 	Parameter C_H_SYNC_PULSE bound to: 96 - type: integer 
 	Parameter C_H_BACK_PORCH bound to: 148 - type: integer 
 	Parameter C_H_ACTIVE_TIME bound to: 640 - type: integer 
@@ -68,25 +68,25 @@ INFO: [Synth 8-638] synthesizing module 'vga_top' [E:/Learning/DigitalLogic/proj
 	Parameter C_IMAGE_WIDTH bound to: 140 - type: integer 
 	Parameter C_IMAGE_HEIGHT bound to: 8 - type: integer 
 	Parameter NUM_DIV bound to: 4 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'RAM_set' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:23]
-INFO: [Synth 8-256] done synthesizing module 'RAM_set' (5#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:23]
-INFO: [Synth 8-256] done synthesizing module 'vga_top' (6#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:23]
-WARNING: [Synth 8-689] width (8) of port connection 'state' does not match port width (7) of module 'vga_top' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:152]
-INFO: [Synth 8-638] synthesizing module 'manual_top' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'RAM_set' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RAM_set' (5#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_top' (6#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'state' does not match port width (7) of module 'vga_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:152]
+INFO: [Synth 8-638] synthesizing module 'manual_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:23]
 	Parameter poweron bound to: 3'b000 
 	Parameter poweroff bound to: 3'b001 
 	Parameter not_starting bound to: 3'b010 
 	Parameter starting bound to: 3'b011 
 	Parameter moving bound to: 3'b100 
 	Parameter period bound to: 100000000 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'odometer' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:23]
-INFO: [Synth 8-638] synthesizing module 'light_7seg_ego1' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:23]
-INFO: [Synth 8-226] default block is never used [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:28]
-INFO: [Synth 8-256] done synthesizing module 'light_7seg_ego1' (7#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:23]
-INFO: [Synth 8-256] done synthesizing module 'odometer' (8#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:23]
-WARNING: [Synth 8-5788] Register flag_stop_engine_reg in module manual_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:135]
-INFO: [Synth 8-256] done synthesizing module 'manual_top' (9#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'semiauto_top' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'odometer' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:23]
+INFO: [Synth 8-638] synthesizing module 'light_7seg_ego1' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:28]
+INFO: [Synth 8-256] done synthesizing module 'light_7seg_ego1' (7#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'odometer' (8#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:23]
+WARNING: [Synth 8-5788] Register flag_stop_engine_reg in module manual_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:135]
+INFO: [Synth 8-256] done synthesizing module 'manual_top' (9#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'semiauto_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:23]
 	Parameter poweron bound to: 4'b0000 
 	Parameter poweroff bound to: 4'b0001 
 	Parameter going bound to: 4'b0010 
@@ -109,10 +109,10 @@ INFO: [Synth 8-638] synthesizing module 'semiauto_top' [E:/Learning/DigitalLogic
 	Parameter place_beacon_time bound to: 3000000 - type: integer 
 	Parameter destroy_beacon_time bound to: 3000000 - type: integer 
 	Parameter left_right_place_beacon_time bound to: 3000000 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:109]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:181]
-INFO: [Synth 8-256] done synthesizing module 'semiauto_top' (10#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:23]
-INFO: [Synth 8-638] synthesizing module 'auto_top' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:109]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:181]
+INFO: [Synth 8-256] done synthesizing module 'semiauto_top' (10#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'auto_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:23]
 	Parameter poweron bound to: 4'b0000 
 	Parameter poweroff bound to: 4'b0001 
 	Parameter going bound to: 4'b0010 
@@ -134,14 +134,14 @@ INFO: [Synth 8-638] synthesizing module 'auto_top' [E:/Learning/DigitalLogic/pro
 	Parameter place_beacon_time bound to: 3000000 - type: integer 
 	Parameter destroy_beacon_time bound to: 3000000 - type: integer 
 	Parameter left_right_place_beacon_time bound to: 3000000 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:111]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:178]
-INFO: [Synth 8-256] done synthesizing module 'auto_top' (11#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:23]
-INFO: [Synth 8-256] done synthesizing module 'SimulatedDevice' (12#1) [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:111]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:178]
+INFO: [Synth 8-256] done synthesizing module 'auto_top' (11#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SimulatedDevice' (12#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:23]
 WARNING: [Synth 8-3331] design uart_top has unconnected port data_in[7]
 WARNING: [Synth 8-3331] design SimulatedDevice has unconnected port rst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 390.914 ; gain = 160.766
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 389.551 ; gain = 159.445
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -151,38 +151,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 390.914 ; gain = 160.766
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 389.551 ; gain = 159.445
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]
-Finished Parsing XDC File [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SimulatedDevice_propImpl.xdc].
+Parsing XDC File [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SimulatedDevice_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/SimulatedDevice_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 729.918 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 728.020 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 729.918 ; gain = 499.770
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 728.020 ; gain = 497.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 729.918 ; gain = 499.770
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 728.020 ; gain = 497.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 729.918 ; gain = 499.770
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 728.020 ; gain = 497.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -207,12 +207,12 @@ INFO: [Synth 8-5546] ROM "data_ready" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_error" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "data_out1" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'c6_reg[7:0]' into 'c0_reg[7:0]' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:46]
-WARNING: [Synth 8-6014] Unused sequential element c6_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:46]
-INFO: [Synth 8-4471] merging register 'green_reg[3:0]' into 'red_reg[3:0]' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:371]
-INFO: [Synth 8-4471] merging register 'blue_reg[3:0]' into 'red_reg[3:0]' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:372]
-WARNING: [Synth 8-6014] Unused sequential element green_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:371]
-WARNING: [Synth 8-6014] Unused sequential element blue_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:372]
+INFO: [Synth 8-4471] merging register 'c6_reg[7:0]' into 'c0_reg[7:0]' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:46]
+WARNING: [Synth 8-6014] Unused sequential element c6_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:46]
+INFO: [Synth 8-4471] merging register 'green_reg[3:0]' into 'red_reg[3:0]' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:371]
+INFO: [Synth 8-4471] merging register 'blue_reg[3:0]' into 'red_reg[3:0]' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:372]
+WARNING: [Synth 8-6014] Unused sequential element green_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:371]
+WARNING: [Synth 8-6014] Unused sequential element blue_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:372]
 INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "cntt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "nums" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -227,11 +227,11 @@ INFO: [Synth 8-5544] ROM "manual_not_starting" won't be mapped to Block RAM beca
 INFO: [Synth 8-5544] ROM "manual_starting" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "res" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "reverse_shutdown" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element res_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:114]
-INFO: [Synth 8-4471] merging register 'destroy_barrier_signal_reg' into 'car_go_back_reg' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
-INFO: [Synth 8-4471] merging register 'place_barrier_signal_reg' into 'car_go_back_reg' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
-WARNING: [Synth 8-6014] Unused sequential element destroy_barrier_signal_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
-WARNING: [Synth 8-6014] Unused sequential element place_barrier_signal_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+WARNING: [Synth 8-6014] Unused sequential element res_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:114]
+INFO: [Synth 8-4471] merging register 'destroy_barrier_signal_reg' into 'car_go_back_reg' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+INFO: [Synth 8-4471] merging register 'place_barrier_signal_reg' into 'car_go_back_reg' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+WARNING: [Synth 8-6014] Unused sequential element destroy_barrier_signal_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+WARNING: [Synth 8-6014] Unused sequential element place_barrier_signal_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -251,7 +251,7 @@ INFO: [Synth 8-5545] ROM "place_beacon_cnt" won't be mapped to RAM because addre
 INFO: [Synth 8-5545] ROM "place_beacon_straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "destroy_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:188]
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:188]
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -270,7 +270,7 @@ INFO: [Synth 8-5545] ROM "place_beacon_cnt" won't be mapped to RAM because addre
 INFO: [Synth 8-5545] ROM "place_beacon_straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "destroy_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:185]
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:185]
 INFO: [Synth 8-5544] ROM "enable" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "total_engine_power_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "total_engine_power" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -291,9 +291,9 @@ INFO: [Synth 8-5545] ROM "total_engine_power" won't be mapped to RAM because add
                     stop |                             1011 |                            01110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'uart_tx'
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:47]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 729.918 ; gain = 499.770
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 728.020 ; gain = 497.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'vga/u_ram_9' (RAM_set) to 'vga/u_ram_10'
 
@@ -555,11 +555,11 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element my_divclk/cntclk_cnt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:94]
-WARNING: [Synth 8-6014] Unused sequential element my_divclk/btnclk_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:96]
-WARNING: [Synth 8-6014] Unused sequential element tx/trans_done_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:104]
-WARNING: [Synth 8-6014] Unused sequential element rx/data_ready_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:63]
-WARNING: [Synth 8-6014] Unused sequential element rx/data_error_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:91]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/cntclk_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:94]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/btnclk_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:96]
+WARNING: [Synth 8-6014] Unused sequential element tx/trans_done_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:104]
+WARNING: [Synth 8-6014] Unused sequential element rx/data_ready_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:63]
+WARNING: [Synth 8-6014] Unused sequential element rx/data_error_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:91]
 INFO: [Synth 8-5545] ROM "my_divclk/cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "my_divclk/clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "my_divclk/cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -577,8 +577,8 @@ INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) 
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "res" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "reverse_shutdown" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element om/cntt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:46]
-WARNING: [Synth 8-6014] Unused sequential element res_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:114]
+WARNING: [Synth 8-6014] Unused sequential element om/cntt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:46]
+WARNING: [Synth 8-6014] Unused sequential element res_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:114]
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "turning_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -597,7 +597,7 @@ INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM be
 INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "detector_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "now_detector_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:188]
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:188]
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "turning_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -616,7 +616,7 @@ INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM be
 INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "detector_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:185]
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:185]
 WARNING: [Synth 8-3331] design uart_top has unconnected port data_in[7]
 WARNING: [Synth 8-3331] design SimulatedDevice has unconnected port rst
 INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[7]' (LD) to 'md/rx/next_state_reg[6]'
@@ -790,7 +790,7 @@ WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[2]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[1]) is unused and will be removed from module uart_top.
 WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[0]) is unused and will be removed from module uart_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 729.918 ; gain = 499.770
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 728.020 ; gain = 497.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -811,21 +811,9 @@ ROM:
 |RAM_set     | c1         | 64x7          | LUT            | 
 |RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c5         | 64x7          | LUT            | 
-|RAM_set     | c1         | 64x7          | LUT            | 
-|RAM_set     | c3         | 64x7          | LUT            | 
-|RAM_set     | c4         | 64x7          | LUT            | 
-|RAM_set     | c5         | 64x7          | LUT            | 
-|RAM_set     | c1         | 64x7          | LUT            | 
 |RAM_set     | c5         | 64x7          | LUT            | 
 |RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c5         | 64x7          | LUT            | 
-|RAM_set     | c1         | 64x7          | LUT            | 
-|RAM_set     | c3         | 64x7          | LUT            | 
-|RAM_set     | c4         | 64x7          | LUT            | 
-|RAM_set     | c5         | 64x7          | LUT            | 
-|RAM_set     | c1         | 64x7          | LUT            | 
-|RAM_set     | c3         | 64x7          | LUT            | 
-|RAM_set     | c4         | 64x7          | LUT            | 
 |RAM_set     | c5         | 64x7          | LUT            | 
 |RAM_set     | c1         | 64x7          | LUT            | 
 |RAM_set     | c3         | 64x7          | LUT            | 
@@ -838,19 +826,21 @@ ROM:
 |RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c4         | 64x7          | LUT            | 
 |RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
 |RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c5         | 64x7          | LUT            | 
 |RAM_set     | c1         | 64x7          | LUT            | 
-|RAM_set     | c4         | 64x7          | LUT            | 
 |RAM_set     | c3         | 64x7          | LUT            | 
-|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c4         | 64x7          | LUT            | 
-|RAM_set     | c5         | 64x7          | LUT            | 
 |RAM_set     | c1         | 64x7          | LUT            | 
-|RAM_set     | c4         | 64x7          | LUT            | 
-|RAM_set     | c5         | 64x7          | LUT            | 
-|RAM_set     | c3         | 64x7          | LUT            | 
-|RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c1         | 64x7          | LUT            | 
 |RAM_set     | c3         | 64x7          | LUT            | 
 |RAM_set     | c4         | 64x7          | LUT            | 
@@ -870,13 +860,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 765.871 ; gain = 535.723
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 764.789 ; gain = 534.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 769.375 ; gain = 539.227
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 768.410 ; gain = 538.305
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -890,7 +880,7 @@ Start Technology Mapping
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/u_ram_18/c2_reg[0] )
 WARNING: [Synth 8-3332] Sequential element (vga/u_ram_18/c2_reg[0]) is unused and will be removed from module SimulatedDevice.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -914,7 +904,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -927,7 +917,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -939,25 +929,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1024,11 +1014,11 @@ Report Instance Areas:
 |27    |    u_ram_8       |RAM_set_15   |    58|
 +------+------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 810.309 ; gain = 241.156
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 810.309 ; gain = 580.160
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 811.332 ; gain = 242.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 811.332 ; gain = 581.227
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1040,8 +1030,1046 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 293 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 810.309 ; gain = 584.336
-INFO: [Common 17-1381] The checkpoint 'E:/Learning/DigitalLogic/project/Luo/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.runs/synth_1/SimulatedDevice.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 811.332 ; gain = 585.434
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.runs/synth_1/SimulatedDevice.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file SimulatedDevice_utilization_synth.rpt -pb SimulatedDevice_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 810.309 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jan  2 22:41:29 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 811.332 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  3 17:15:55 2023...
+
+*** Running vivado
+    with args -log SimulatedDevice.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SimulatedDevice.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source SimulatedDevice.tcl -notrace
+Command: synth_design -top SimulatedDevice -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12388 
+WARNING: [Synth 8-2611] redeclaration of ansi port nums is not allowed [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
+WARNING: [Synth 8-976] nums has already been declared [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
+WARNING: [Synth 8-2654] second declaration of nums ignored [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:42]
+INFO: [Synth 8-994] nums is declared here [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:30]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 342.086 ; gain = 112.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SimulatedDevice' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:23]
+	Parameter total_engine_power_time bound to: 100000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:122]
+INFO: [Synth 8-638] synthesizing module 'uart_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:11]
+INFO: [Synth 8-638] synthesizing module 'divclk' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:71]
+INFO: [Synth 8-256] done synthesizing module 'divclk' (1#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:10]
+	Parameter idle bound to: 5'b00000 
+	Parameter start bound to: 5'b00001 
+	Parameter b0 bound to: 5'b00011 
+	Parameter b1 bound to: 5'b00010 
+	Parameter b2 bound to: 5'b00110 
+	Parameter b3 bound to: 5'b00111 
+	Parameter b4 bound to: 5'b00101 
+	Parameter b5 bound to: 5'b00100 
+	Parameter b6 bound to: 5'b01100 
+	Parameter b7 bound to: 5'b01101 
+	Parameter check bound to: 5'b01111 
+	Parameter stop bound to: 5'b01110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:51]
+WARNING: [Synth 8-6014] Unused sequential element clk_x_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:47]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (2#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:10]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:12]
+	Parameter width bound to: 8 - type: integer 
+	Parameter idle bound to: 1 - type: integer 
+	Parameter one bound to: 2 - type: integer 
+	Parameter two bound to: 3 - type: integer 
+	Parameter stop bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:68]
+WARNING: [Synth 8-3848] Net rxd_buf in module/entity uart_rx does not have driver. [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:22]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (3#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:12]
+INFO: [Synth 8-256] done synthesizing module 'uart_top' (4#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:11]
+INFO: [Synth 8-638] synthesizing module 'vga_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:23]
+	Parameter C_H_SYNC_PULSE bound to: 96 - type: integer 
+	Parameter C_H_BACK_PORCH bound to: 148 - type: integer 
+	Parameter C_H_ACTIVE_TIME bound to: 640 - type: integer 
+	Parameter C_H_FRONT_PORCH bound to: 16 - type: integer 
+	Parameter C_H_LINE_PERIOD bound to: 800 - type: integer 
+	Parameter C_V_SYNC_PULSE bound to: 2 - type: integer 
+	Parameter C_V_BACK_PORCH bound to: 33 - type: integer 
+	Parameter C_V_ACTIVE_TIME bound to: 480 - type: integer 
+	Parameter C_V_FRONT_PORCH bound to: 10 - type: integer 
+	Parameter C_V_FRAME_PERIOD bound to: 525 - type: integer 
+	Parameter C_IMAGE_WIDTH bound to: 140 - type: integer 
+	Parameter C_IMAGE_HEIGHT bound to: 8 - type: integer 
+	Parameter NUM_DIV bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'RAM_set' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RAM_set' (5#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga_top' (6#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'state' does not match port width (7) of module 'vga_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:152]
+INFO: [Synth 8-638] synthesizing module 'manual_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:23]
+	Parameter poweron bound to: 3'b000 
+	Parameter poweroff bound to: 3'b001 
+	Parameter not_starting bound to: 3'b010 
+	Parameter starting bound to: 3'b011 
+	Parameter moving bound to: 3'b100 
+	Parameter period bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'odometer' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:23]
+INFO: [Synth 8-638] synthesizing module 'light_7seg_ego1' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:28]
+INFO: [Synth 8-256] done synthesizing module 'light_7seg_ego1' (7#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/light_7seg_ego1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'odometer' (8#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:23]
+WARNING: [Synth 8-5788] Register flag_stop_engine_reg in module manual_top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:135]
+INFO: [Synth 8-256] done synthesizing module 'manual_top' (9#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'semiauto_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:23]
+	Parameter poweron bound to: 4'b0000 
+	Parameter poweroff bound to: 4'b0001 
+	Parameter going bound to: 4'b0010 
+	Parameter turning_left bound to: 4'b0011 
+	Parameter turning_right bound to: 4'b0100 
+	Parameter turning_back bound to: 4'b0101 
+	Parameter place_beacon bound to: 4'b0110 
+	Parameter destroy_beacon bound to: 4'b0111 
+	Parameter straight bound to: 4'b1000 
+	Parameter place_going bound to: 4'b1001 
+	Parameter place_beacon_straight bound to: 4'b1010 
+	Parameter left_right_place_beacon bound to: 4'b1011 
+	Parameter waiting bound to: 4'b1100 
+	Parameter period bound to: 100000000 - type: integer 
+	Parameter detector_time bound to: 8000000 - type: integer 
+	Parameter turning_left_right_time bound to: 90000000 - type: integer 
+	Parameter turning_back_time bound to: 180000000 - type: integer 
+	Parameter straight_time bound to: 90000000 - type: integer 
+	Parameter place_going_time bound to: 80000000 - type: integer 
+	Parameter place_beacon_time bound to: 3000000 - type: integer 
+	Parameter destroy_beacon_time bound to: 3000000 - type: integer 
+	Parameter left_right_place_beacon_time bound to: 3000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:109]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:181]
+INFO: [Synth 8-256] done synthesizing module 'semiauto_top' (10#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'auto_top' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:23]
+	Parameter poweron bound to: 4'b0000 
+	Parameter poweroff bound to: 4'b0001 
+	Parameter going bound to: 4'b0010 
+	Parameter turning_left bound to: 4'b0011 
+	Parameter turning_right bound to: 4'b0100 
+	Parameter turning_back bound to: 4'b0101 
+	Parameter place_beacon bound to: 4'b0110 
+	Parameter destroy_beacon bound to: 4'b0111 
+	Parameter straight bound to: 4'b1000 
+	Parameter place_going bound to: 4'b1001 
+	Parameter place_beacon_straight bound to: 4'b1010 
+	Parameter left_right_place_beacon bound to: 4'b1011 
+	Parameter period bound to: 100000000 - type: integer 
+	Parameter detector_time bound to: 8000000 - type: integer 
+	Parameter turning_left_right_time bound to: 90000000 - type: integer 
+	Parameter turning_back_time bound to: 180000000 - type: integer 
+	Parameter straight_time bound to: 90000000 - type: integer 
+	Parameter place_going_time bound to: 80000000 - type: integer 
+	Parameter place_beacon_time bound to: 3000000 - type: integer 
+	Parameter destroy_beacon_time bound to: 3000000 - type: integer 
+	Parameter left_right_place_beacon_time bound to: 3000000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:111]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:178]
+INFO: [Synth 8-256] done synthesizing module 'auto_top' (11#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SimulatedDevice' (12#1) [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/dev_top.v:23]
+WARNING: [Synth 8-3331] design uart_top has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design SimulatedDevice has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 388.914 ; gain = 159.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 388.914 ; gain = 159.453
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/constrs_1/imports/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SimulatedDevice_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SimulatedDevice_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 728.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 728.449 ; gain = 498.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 728.449 ; gain = 498.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 728.449 ; gain = 498.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "btnclk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cntclk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_16x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'uart_tx'
+INFO: [Synth 8-5546] ROM "present_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "trans_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "present_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxd1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rxd1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'c6_reg[7:0]' into 'c0_reg[7:0]' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:46]
+WARNING: [Synth 8-6014] Unused sequential element c6_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v:46]
+INFO: [Synth 8-4471] merging register 'green_reg[3:0]' into 'red_reg[3:0]' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:371]
+INFO: [Synth 8-4471] merging register 'blue_reg[3:0]' into 'red_reg[3:0]' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:372]
+WARNING: [Synth 8-6014] Unused sequential element green_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:371]
+WARNING: [Synth 8-6014] Unused sequential element blue_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v:372]
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cntt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "nums" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "next_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "ttt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "engine_power_signal" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "manual_not_starting" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "manual_not_starting" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "manual_starting" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "res" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reverse_shutdown" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element res_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:114]
+INFO: [Synth 8-4471] merging register 'destroy_barrier_signal_reg' into 'car_go_back_reg' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+INFO: [Synth 8-4471] merging register 'place_barrier_signal_reg' into 'car_go_back_reg' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+WARNING: [Synth 8-6014] Unused sequential element destroy_barrier_signal_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+WARNING: [Synth 8-6014] Unused sequential element place_barrier_signal_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:113]
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "now_detector_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "detector_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "turning_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_going_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "destroy_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:188]
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "now_detector_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "detector_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "turning_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_going_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "destroy_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:185]
+INFO: [Synth 8-5544] ROM "enable" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "total_engine_power_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "total_engine_power" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                            00000
+                   start |                             0001 |                            00001
+                      b0 |                             0010 |                            00011
+                      b1 |                             0011 |                            00010
+                      b2 |                             0100 |                            00110
+                      b3 |                             0101 |                            00111
+                      b4 |                             0110 |                            00101
+                      b5 |                             0111 |                            00100
+                      b6 |                             1000 |                            01100
+                      b7 |                             1001 |                            01101
+                   check |                             1010 |                            01111
+                    stop |                             1011 |                            01110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'uart_tx'
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 728.449 ; gain = 498.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'vga/u_ram_9' (RAM_set) to 'vga/u_ram_10'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 28    
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               60 Bit    Registers := 1     
+	               32 Bit    Registers := 26    
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 120   
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   9 Input     60 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 60    
+	   5 Input     32 Bit        Muxes := 3     
+	  14 Input     32 Bit        Muxes := 1     
+	  13 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	  17 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  37 Input      7 Bit        Muxes := 19    
+	  14 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 5     
+	   8 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 2     
+	  20 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  14 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 80    
+	  12 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 12    
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 16    
+	  13 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SimulatedDevice 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+Module divclk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module uart_tx 
+Detailed RTL Component Info : 
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 4     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 9     
+Module uart_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module RAM_set 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 6     
++---Muxes : 
+	  37 Input      7 Bit        Muxes := 1     
+Module vga_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               60 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     60 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module light_7seg_ego1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      8 Bit        Muxes := 1     
+Module odometer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module manual_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module semiauto_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   5 Input     32 Bit        Muxes := 1     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  14 Input      1 Bit        Muxes := 15    
+Module auto_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   5 Input     32 Bit        Muxes := 1     
+	  13 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 2     
+	  20 Input      4 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	  13 Input      1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/cntclk_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:94]
+WARNING: [Synth 8-6014] Unused sequential element my_divclk/btnclk_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_top.v:96]
+WARNING: [Synth 8-6014] Unused sequential element tx/trans_done_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_tx.v:104]
+WARNING: [Synth 8-6014] Unused sequential element rx/data_ready_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:63]
+WARNING: [Synth 8-6014] Unused sequential element rx/data_error_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/imports/new/uart_rx.v:91]
+INFO: [Synth 8-5545] ROM "my_divclk/cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_divclk/clk_ms" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_divclk/cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_divclk/clk_16x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_divclk/cnt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_divclk/clk_x" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "rx/data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx/data_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx/data_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R_v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "om/ttt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "om/next_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "res" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "reverse_shutdown" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element om/cntt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/odometer.v:46]
+WARNING: [Synth 8-6014] Unused sequential element res_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/manual_top.v:114]
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "turning_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_going_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "destroy_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "detector_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "now_detector_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/semiauto_top.v:188]
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "time_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "turning_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_going_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "place_beacon_straight_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "destroy_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_right_place_beacon_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "detector_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element turning_cnt_reg was removed.  [C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/auto_top.v:185]
+WARNING: [Synth 8-3331] design uart_top has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design SimulatedDevice has unconnected port rst
+INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[7]' (LD) to 'md/rx/next_state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[6]' (LD) to 'md/rx/next_state_reg[5]'
+INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[5]' (LD) to 'md/rx/next_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'md/rx/next_state_reg[3]' (LD) to 'md/rx/next_state_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (md/\rx/next_state_reg[4] )
+INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[7]' (FDR) to 'md/rx/present_state_reg[6]'
+INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[6]' (FDR) to 'md/rx/present_state_reg[5]'
+INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[5]' (FDR) to 'md/rx/present_state_reg[4]'
+INFO: [Synth 8-3886] merging instance 'md/rx/present_state_reg[3]' (FDR) to 'md/rx/present_state_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (auto_device/car_go_back_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (semiauto_device/car_go_back_reg)
+INFO: [Synth 8-3886] merging instance 'vga/cnt_reg[3]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/cnt_reg[2]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/cnt_reg[1]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[1]' (FDP) to 'vga/state_spell_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[5]' (FDP) to 'vga/state_spell_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[4]' (FDP) to 'vga/state_spell_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[0]' (FDP) to 'vga/state_spell_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[3]' (FDP) to 'vga/state_spell_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[2]' (FDP) to 'vga/state_spell_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[7]' (FDP) to 'vga/state_spell_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[11]' (FDP) to 'vga/state_spell_reg[17]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[10]' (FDP) to 'vga/state_spell_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[6]' (FDP) to 'vga/state_spell_reg[18]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[9]' (FDP) to 'vga/state_spell_reg[13]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[8]' (FDP) to 'vga/state_spell_reg[16]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[13]' (FDP) to 'vga/state_spell_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[17]' (FDP) to 'vga/state_spell_reg[19]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[16]' (FDP) to 'vga/state_spell_reg[12]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[12]' (FDP) to 'vga/state_spell_reg[14]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[15]' (FDP) to 'vga/state_spell_reg[21]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[14]' (FDP) to 'vga/state_spell_reg[25]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[19]' (FDP) to 'vga/state_spell_reg[23]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[23]' (FDP) to 'vga/state_spell_reg[29]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[22]' (FDP) to 'vga/state_spell_reg[21]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[18]' (FDP) to 'vga/state_spell_reg[20]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[21]' (FDP) to 'vga/state_spell_reg[26]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[20]' (FDP) to 'vga/state_spell_reg[27]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[29]' (FDP) to 'vga/state_spell_reg[24]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[28]' (FDP) to 'vga/state_spell_reg[26]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[26]' (FDP) to 'vga/state_spell_reg[30]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[31]' (FDP) to 'vga/state_spell_reg[30]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[35]' (FDP) to 'vga/state_spell_reg[34]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[34]' (FDP) to 'vga/state_spell_reg[40]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[30]' (FDP) to 'vga/state_spell_reg[32]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[33]' (FDP) to 'vga/state_spell_reg[32]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[32]' (FDP) to 'vga/state_spell_reg[36]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[37]' (FDP) to 'vga/state_spell_reg[36]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[41]' (FDP) to 'vga/state_spell_reg[43]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[36]' (FDP) to 'vga/state_spell_reg[38]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[38]' (FDP) to 'vga/state_spell_reg[45]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[43]' (FDP) to 'vga/state_spell_reg[47]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[47]' (FDP) to 'vga/state_spell_reg[42]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[46]' (FDP) to 'vga/state_spell_reg[45]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[42]' (FDP) to 'vga/state_spell_reg[44]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[45]' (FDP) to 'vga/state_spell_reg[48]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[44]' (FDP) to 'vga/state_spell_reg[59]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[49]' (FDP) to 'vga/state_spell_reg[48]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[53]' (FDP) to 'vga/state_spell_reg[48]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[52]' (FDP) to 'vga/state_spell_reg[48]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[48]' (FDP) to 'vga/state_spell_reg[50]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[51]' (FDP) to 'vga/state_spell_reg[50]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (vga/\state_spell_reg[50] )
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[59]' (FDP) to 'vga/state_spell_reg[54]'
+INFO: [Synth 8-3886] merging instance 'vga/state_spell_reg[58]' (FDP) to 'vga/state_spell_reg[56]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\in_reg[6] )
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_2/c4_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_2/c3_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_2/c2_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_2/c1_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_1/c5_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_1/c4_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_1/c3_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_1/c2_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_1/c1_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_1/c0_reg[7]' (FDC) to 'vga/u_ram_20/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_20/c5_reg[7]' (FDC) to 'vga/u_ram_20/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_20/c4_reg[7]' (FDC) to 'vga/u_ram_20/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_20/c3_reg[7]' (FDC) to 'vga/u_ram_20/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_20/c2_reg[7]' (FDC) to 'vga/u_ram_20/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_20/c1_reg[7]' (FDC) to 'vga/u_ram_19/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_20/c0_reg[7]' (FDC) to 'vga/u_ram_19/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_19/c5_reg[7]' (FDC) to 'vga/u_ram_19/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_19/c4_reg[7]' (FDC) to 'vga/u_ram_19/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_19/c3_reg[7]' (FDC) to 'vga/u_ram_19/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_19/c2_reg[7]' (FDC) to 'vga/u_ram_19/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_19/c1_reg[7]' (FDC) to 'vga/u_ram_18/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_19/c0_reg[7]' (FDC) to 'vga/u_ram_18/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_18/c5_reg[7]' (FDC) to 'vga/u_ram_18/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_18/c4_reg[7]' (FDC) to 'vga/u_ram_18/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_18/c3_reg[7]' (FDC) to 'vga/u_ram_18/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_18/c2_reg[7]' (FDC) to 'vga/u_ram_18/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_18/c1_reg[7]' (FDC) to 'vga/u_ram_17/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_18/c0_reg[7]' (FDC) to 'vga/u_ram_17/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_17/c5_reg[7]' (FDC) to 'vga/u_ram_17/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_17/c4_reg[7]' (FDC) to 'vga/u_ram_17/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_17/c3_reg[7]' (FDC) to 'vga/u_ram_17/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_17/c2_reg[7]' (FDC) to 'vga/u_ram_17/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_17/c1_reg[7]' (FDC) to 'vga/u_ram_16/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_17/c0_reg[7]' (FDC) to 'vga/u_ram_16/c5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_16/c5_reg[7]' (FDC) to 'vga/u_ram_16/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_16/c4_reg[7]' (FDC) to 'vga/u_ram_16/c3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_16/c3_reg[7]' (FDC) to 'vga/u_ram_16/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_16/c2_reg[7]' (FDC) to 'vga/u_ram_16/c1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/u_ram_16/c1_reg[7]' (FDC) to 'vga/u_ram_15/c5_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga/\u_ram_2/c0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (md/\tx/data_in_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (md/\tx/data_in_buf_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[4]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (tx/data_in_buf_reg[7]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (tx/data_in_buf_reg[6]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/present_state_reg[4]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out_reg[7]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out_reg[6]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out_reg[5]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out_reg[4]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out1_reg[7]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out1_reg[6]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out1_reg[5]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/data_out1_reg[4]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[6]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[5]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[4]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[3]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[1]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_12/c2_reg[0]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_13/c2_reg[5]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_13/c2_reg[4]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_13/c2_reg[3]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_13/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_13/c2_reg[1]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_14/c2_reg[6]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_14/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_15/c2_reg[6]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_15/c2_reg[5]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_15/c2_reg[4]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_15/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_15/c2_reg[1]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_16/c2_reg[4]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_16/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_17/c2_reg[5]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_17/c2_reg[4]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_17/c2_reg[3]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_17/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_17/c2_reg[1]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_18/c2_reg[3]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_18/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_19/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_20/c2_reg[6]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_20/c2_reg[5]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_20/c2_reg[4]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_20/c2_reg[3]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_20/c2_reg[2]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_20/c2_reg[1]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (state_spell_reg[50]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (u_ram_2/c0_reg[0]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (manual_not_starting_reg) is unused and will be removed from module manual_top.
+WARNING: [Synth 8-3332] Sequential element (now_detector_state_reg[2]) is unused and will be removed from module semiauto_top.
+WARNING: [Synth 8-3332] Sequential element (car_go_back_reg) is unused and will be removed from module semiauto_top.
+WARNING: [Synth 8-3332] Sequential element (now_detector_state_reg[2]) is unused and will be removed from module auto_top.
+WARNING: [Synth 8-3332] Sequential element (car_go_back_reg) is unused and will be removed from module auto_top.
+WARNING: [Synth 8-3332] Sequential element (in_reg[7]) is unused and will be removed from module SimulatedDevice.
+WARNING: [Synth 8-3332] Sequential element (in_reg[6]) is unused and will be removed from module SimulatedDevice.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga/\u_ram_9/c1_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (u_ram_9/c1_reg[0]) is unused and will be removed from module vga_top.
+WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[2]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[1]) is unused and will be removed from module uart_top.
+WARNING: [Synth 8-3332] Sequential element (rx/next_state_reg[0]) is unused and will be removed from module uart_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 728.449 ; gain = 498.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c1         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
+|RAM_set     | c5         | 64x7          | LUT            | 
+|RAM_set     | c4         | 64x7          | LUT            | 
+|RAM_set     | c3         | 64x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 763.738 ; gain = 534.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 767.285 ; gain = 537.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/u_ram_18/c2_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (vga/u_ram_18/c2_reg[0]) is unused and will be removed from module SimulatedDevice.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   250|
+|3     |LUT1   |    19|
+|4     |LUT2   |   262|
+|5     |LUT3   |   203|
+|6     |LUT4   |   714|
+|7     |LUT5   |   324|
+|8     |LUT6   |   390|
+|9     |MUXF7  |    27|
+|10    |MUXF8  |    10|
+|11    |FDCE   |   458|
+|12    |FDPE   |    11|
+|13    |FDRE   |  1031|
+|14    |FDSE   |     4|
+|15    |IBUF   |    15|
+|16    |OBUF   |    45|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+-------------+------+
+|      |Instance          |Module       |Cells |
++------+------------------+-------------+------+
+|1     |top               |             |  3764|
+|2     |  auto_device     |auto_top     |   766|
+|3     |  manual_device   |manual_top   |   855|
+|4     |    om            |odometer     |   537|
+|5     |  md              |uart_top     |   242|
+|6     |    my_divclk     |divclk       |   156|
+|7     |    rx            |uart_rx      |    59|
+|8     |    tx            |uart_tx      |    25|
+|9     |  semiauto_device |semiauto_top |   755|
+|10    |  vga             |vga_top      |  1006|
+|11    |    u_ram_1       |RAM_set      |    64|
+|12    |    u_ram_11      |RAM_set_0    |    92|
+|13    |    u_ram_13      |RAM_set_1    |    49|
+|14    |    u_ram_14      |RAM_set_2    |    36|
+|15    |    u_ram_15      |RAM_set_3    |    16|
+|16    |    u_ram_16      |RAM_set_4    |    68|
+|17    |    u_ram_17      |RAM_set_5    |    58|
+|18    |    u_ram_18      |RAM_set_6    |    51|
+|19    |    u_ram_19      |RAM_set_7    |    65|
+|20    |    u_ram_2       |RAM_set_8    |    44|
+|21    |    u_ram_20      |RAM_set_9    |    15|
+|22    |    u_ram_3       |RAM_set_10   |    57|
+|23    |    u_ram_4       |RAM_set_11   |    58|
+|24    |    u_ram_5       |RAM_set_12   |    61|
+|25    |    u_ram_6       |RAM_set_13   |    48|
+|26    |    u_ram_7       |RAM_set_14   |    51|
+|27    |    u_ram_8       |RAM_set_15   |    58|
++------+------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 811.082 ; gain = 581.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 811.082 ; gain = 242.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 811.082 ; gain = 581.621
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+293 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 811.082 ; gain = 585.293
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.runs/synth_1/SimulatedDevice.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SimulatedDevice_utilization_synth.rpt -pb SimulatedDevice_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 811.082 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  4 15:45:04 2023...

@@ -10,10 +10,6 @@ set_property PACKAGE_PIN T4 [get_ports tx]
 set_property PACKAGE_PIN P5 [get_ports reverse_signal]
 set_property IOSTANDARD LVCMOS33 [get_ports reverse_signal]
 
-
-set_property PACKAGE_PIN P5 [get_ports reverse_signal]
-set_property IOSTANDARD LVCMOS33 [get_ports reverse_signal]
-
 set_property PACKAGE_PIN P4 [get_ports clutch_signal]
 set_property IOSTANDARD LVCMOS33 [get_ports clutch_signal]
 
@@ -29,14 +25,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports start_engine_signal]
 set_property PACKAGE_PIN P15 [get_ports stop_engine_signal]
 set_property IOSTANDARD LVCMOS33 [get_ports stop_engine_signal]
 
-#set_property PACKAGE_PIN L1 [get_ports manual_not_starting]
-#set_property IOSTANDARD LVCMOS33 [get_ports manual_not_starting]
-
-#set_property PACKAGE_PIN M1 [get_ports manual_starting]
-#set_property IOSTANDARD LVCMOS33 [get_ports manual_starting]
-
-#set_property PACKAGE_PIN K3 [get_ports manual_moving]
-#set_property IOSTANDARD LVCMOS33 [get_ports manual_moving]
 
 set_property PACKAGE_PIN K1 [get_ports engine_power]
 set_property IOSTANDARD LVCMOS33 [get_ports engine_power]
