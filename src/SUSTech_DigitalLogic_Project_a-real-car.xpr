@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5ecc49f9004f4963a6e3d4c69a5cf208"/>
@@ -21,6 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -56,7 +57,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/RAM_set.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/RAM_set.v"/>
           <Attr Name="ImportTime" Val="1672405858"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -137,7 +138,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/vga_top.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.srcs/sources_1/new/vga_top.v"/>
           <Attr Name="ImportTime" Val="1672667718"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
