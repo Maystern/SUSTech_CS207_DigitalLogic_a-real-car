@@ -8,7 +8,7 @@
 
 小车具有手动模式、半自动模式、自动模式，并且能使用 vga 接口外接显示器显示实时状态。
 
-本项目主要由 @[Maystern](https://github.com/maystern) @[HeyHowAreYouDoing](HeyHowAreYouDoing) 共同开发。
+本项目主要由 @[Maystern](https://github.com/maystern) @[HeyHowAreYouDoing](https://github.com/HeyHowAreYouDoing) 共同开发。
 
 ## 如何使用
 
