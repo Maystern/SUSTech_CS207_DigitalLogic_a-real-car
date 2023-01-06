@@ -60,16 +60,13 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/Maystern/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-2364-MaysternLaptop/incrSyn
   open_checkpoint SimulatedDevice_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Maystern/Desktop/SUSTech_DigitalLogic_Project_a-real-car/src/SUSTech_DigitalLogic_Project_a-real-car.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Maystern/Desktop/Final/SUSTech_DigitalLogic_Project_a-real-car/SUSTech_DigitalLogic_Project_a-real-car.cache/wt [current_project]
   catch { write_mem_info -force SimulatedDevice.mmi }
   write_bitstream -force SimulatedDevice.bit 
   catch {write_debug_probes -quiet -force SimulatedDevice}
