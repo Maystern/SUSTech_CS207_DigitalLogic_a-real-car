@@ -10,6 +10,10 @@
 
 本项目主要由 @[Maystern](https://github.com/maystern) @[HeyHowAreYouDoing](https://github.com/HeyHowAreYouDoing) 共同开发。
 
+- 报告得分：`9 / 10` + `3 / 3` (bonus)
+- 视频得分：`5 / 5` + `5 / 5` (bonus)
+- 总得分: `14 / 15` + `8 / 8` (bonus)
+
 ## 如何使用
 
 本项目依照 [MIT License](https://en.wikipedia.org/wiki/MIT_License) 协议进行开源，请遵照相关协议。
@@ -18,8 +22,4 @@
 2. 进入获得的 `SUSTech_DigitalLogic_Project_a-real-car` 文件夹下的 `src` 目录。
 3. 使用 **Vivado** 打开 `SUSTech_DigitalLogic_Project_a-real-car.xpr`，打开工程。
 
-## 项目得分
-
-- 报告：9 / 10 + 3 / 3 (bonuns)
-- 视频：5 / 5 + 5 / 5 (bonus)
 
