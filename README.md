@@ -18,3 +18,8 @@
 2. 进入获得的 `SUSTech_DigitalLogic_Project_a-real-car` 文件夹下的 `src` 目录。
 3. 使用 **Vivado** 打开 `SUSTech_DigitalLogic_Project_a-real-car.xpr`，打开工程。
 
+## 项目得分
+
+- 报告：9 / 10 + 3 / 3 (bonuns)
+- 视频：5 / 5 + 5 / 5 (bonus)
+
