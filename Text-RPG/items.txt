@@ -1,2 +1,0 @@
-4 Leaf clover,5,luck,
-health potion,10,health,

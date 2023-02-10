@@ -1,3 +1,0 @@
-wooden bow,10,
-iron bow,15,
-diamond bow,20,

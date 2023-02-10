@@ -1,3 +1,0 @@
-wooden sword,10,
-iron sword,15,
-diamond sword,20,
